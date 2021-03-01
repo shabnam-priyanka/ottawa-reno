@@ -3,7 +3,7 @@ $$$$$$$$ Navbar area style start
 ****************************************************$$*/
 
 .navbar {
-  background-color: rgba(255, 217, 0, 0.349);
+  /* background-color: rgba(255, 217, 0, 0.349); */
   height: 90px;
   padding-bottom: 0px;
   padding-top: 25px;
@@ -18,4 +18,70 @@ $$$$$$$$ Navbar area style start
   font-weight: bold;
   color: black;
   background-color: rgba(255, 255, 255, 0);
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+/***************************************************$$
+$$$ Navbar ended $$$ header-area style start
+****************************************************$$*/
+.header-area {
+  background-image: url("https://cdn.pixabay.com/photo/2016/01/19/17/08/vintage-1149558__340.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  /* background-position: ; */
+  height: 650px;
+}
+
+/***************************************************$$
+$$$ header area ended $$$ about-area style start
+****************************************************$$*/
+
+.about-area {
+  height: 650px;
+  background-color: #7c7c7c;
+  padding: 50px 0px;
+}
+
+.about-area p {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .about-area {
+    height: auto;
+    text-align: center;
+  }
+}
+/***************************************************$$
+$$$ about-area ended $$$ renovations-area style start
+****************************************************$$*/
+
+.renovations-area {
+  height: 650px;
+  background-color: #b64949;
+  padding: 50px 0px;
+}
+
+.renovation-contents {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.renovations-img-div {
+}
+
+.renovations-content-div {
+  /* position: relative; */
+  background-color: #3e3e3e;
+  color: #fff;
+  padding: 60px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  /* z-index: 2; */
 }
