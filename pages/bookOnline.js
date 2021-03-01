@@ -1,8 +1,9 @@
+import BookOnline from "../components/bookOnline/BookOnline";
 
 const bookOnline = () => {
     return (
         <div>
-            <h1>This is book online page</h1>
+         <BookOnline/>
         </div>
     );
 };
