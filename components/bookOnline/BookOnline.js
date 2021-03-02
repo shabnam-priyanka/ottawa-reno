@@ -84,7 +84,7 @@ const BookOnline = () => {
 
     const bookingList = book.map(booking => {
         return (
-            <div className="card">
+            <div key={booking.id} className="card">
             <div className="card-image">
                 <img src={booking.img} alt="img" />
                 <span className="card-title">{booking.nai}</span>
@@ -93,7 +93,7 @@ const BookOnline = () => {
                 <p>{booking.name}</p>
                 <div className="card-action">
                     <Link href="/">
-                        <a><button>Book free Consultation</button> </a>
+                        <a><button className='book-btn'>Book free Consultation</button> </a>
                     </Link>
                 </div>
             </div>
@@ -103,7 +103,7 @@ const BookOnline = () => {
 
 return (
     <div>
-        <h1>Shabnam code here</h1>
+       
         <div className="rootCard">
         {bookingList}
       </div>

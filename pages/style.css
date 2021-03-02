@@ -159,3 +159,27 @@ $$$ renovations-area ended $$$ Contact Us-area style start
     max-width: 23%;
   }
 }
+/* booking buttonwork */
+.book-btn {
+  padding: 10px 0px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 10px;
+  /* box-shadow: 0 9px #999; */
+  width: 100%;
+}
+
+.book-btn:hover {
+  background-color: #3e8e41;
+}
+
+.book-btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
