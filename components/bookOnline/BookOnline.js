@@ -31,30 +31,34 @@ const book = [
     },
 ];
 
-const BookOnline = () => (
-    <div>
-        <h1>Shabnam code here</h1>
-        {book.map((booking) => (
-            <div className="row">
-                <div className="col s12 m7">
-                    <div className="card">
-                        <div className="card-image">
-                            <img src={booking.img} alt="img" />
-                            <span className="card-title">{booking.title}</span>
-                        </div>
-                        <div className="card-content">
-                            <p>{booking.details}</p>
-                            <div className="card-action">
-                                <Link href="/">
-                                    <a>Book for Consultation</a>
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
+const BookOnline = () => { 
+
+    const bookingList = book.map(booking => {
+        return (
+            <div className="card">
+            <div className="card-image">
+                <img src={booking.img} alt="img" />
+                <span className="card-title">{booking.title}</span>
+            </div>
+            <div className="card-content">
+                <p>{booking.details}</p>
+                <div className="card-action">
+                    <Link href="/">
+                        <a>Book for Consultation</a>
+                    </Link>
                 </div>
             </div>
-        ))}
+        </div>
+        )
+      })
+
+return (
+    <div>
+        <h1>Shabnam code here</h1>
+        <div className="rootCard">
+        {bookingList}
+      </div>
     </div>
-);
+)};
 
 export default BookOnline;

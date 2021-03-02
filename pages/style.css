@@ -6,14 +6,14 @@ $$$$$$$$ Navbar area style start
   /* background-color: rgba(255, 217, 0, 0.349); */
   height: 90px;
   padding-bottom: 0px;
-  padding-top: 25px;
+  padding-top: 65px;
   box-shadow: 0 4px 2px -2px gray;
 }
 
 .navNumber {
   z-index: 3;
   position: relative;
-  top: 0px;
+  top: -40px;
   left: 0px;
   font-weight: bold;
   color: black;
@@ -62,26 +62,100 @@ $$$ about-area ended $$$ renovations-area style start
 ****************************************************$$*/
 
 .renovations-area {
-  height: 650px;
-  background-color: #b64949;
+  background-color: #3e3e3e;
   padding: 50px 0px;
 }
 
 .renovation-contents {
   position: relative;
-  /* overflow: hidden; */
+  margin: 30px 0px;
 }
 
-.renovations-img-div {
+.renovations-img-div img:hover {
+  opacity: 0.8;
 }
 
 .renovations-content-div {
-  /* position: relative; */
   background-color: #3e3e3e;
   color: #fff;
   padding: 60px;
   position: absolute;
   top: 40px;
-  right: 40px;
-  /* z-index: 2; */
+  right: 0px;
+  border: 2px solid #fff;
+}
+
+@media (max-width: 991px) {
+  .renovation-contents {
+    text-align: center;
+  }
+  .renovations-content-div {
+    position: static;
+  }
+}
+
+.renovations-content-div h2 {
+  font-weight: 400;
+}
+
+.renovations-content-div hr {
+  height: 1px;
+  background-color: #fff;
+  margin: 20px 0px;
+}
+
+.renovations-content-div button {
+  border: none;
+  padding: 7px 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  .renovations-content-div h2 {
+    font-size: 23px;
+  }
+  .renovations-content-div hr {
+    margin: 10px 0px;
+  }
+  .renovations-content-div button {
+    margin-top: 0px;
+  }
+}
+
+/***************************************************$$
+$$$ renovations-area ended $$$ Contact Us-area style start
+****************************************************$$*/
+/* .
+. 
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.*/
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Book Online style area start %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+/***************************************************$$
+$$$ renovations-area ended $$$ Contact Us-area style start
+****************************************************$$*/
+@media (min-width: 600px) {
+  .rootCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    margin: 10px;
+    max-width: 23%;
+  }
 }

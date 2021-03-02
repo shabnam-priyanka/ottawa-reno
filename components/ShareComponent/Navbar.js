@@ -21,7 +21,7 @@ const Navbar = ({background}) => (
             </button>
             <div className="collapse navbar-collapse  justify-content-end" id="navbarNav">
                 <ul className="navbar-nav">
-                    <li className="nav-item active">
+                    <li className="nav-item">
                         <Link href="/">
                             <a className="nav-link">
                                 Home <span className="sr-only">(current)</span>

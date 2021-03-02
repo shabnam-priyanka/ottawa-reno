@@ -5,7 +5,7 @@ const Header = () => {
     const hello = 5;
     return (
         <div className="header-area">
-            <Navbar />
+            <Navbar background="rgba(255, 255, 255, 0)" />
             <header className="container-xl">
                 <div className="row">
                     <div className="col-md p-0" />
