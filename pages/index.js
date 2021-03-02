@@ -1,10 +1,10 @@
-import styles from "../styles/Home.module.css";
+import Header from "../components/Home/Header";
 
 export default function Home() {
-
-  return (
-    <div className={styles.Home}>
-        <h1>This is home</h1>
-    </div>
-  );
+    return (
+        <div>
+            <Header/>
+            <h1>This is home</h1>
+        </div>
+    );
 }
