@@ -5,9 +5,6 @@ const Layout = ({ children }) => (
     <div>
         <Head>
             <title>Ottawa-Reno</title>
-            {/* swiperjs link here */}
-            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
             {/* materialize  */}
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
             {/* css bootstrap */}
@@ -44,10 +41,6 @@ const Layout = ({ children }) => (
 
         {/* material javascript link */}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-        {/* swiper js link here */}
-        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     </div>
 );
 

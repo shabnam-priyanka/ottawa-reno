@@ -80,7 +80,7 @@ const book = [
 const BookOnline = () => {
     const bookingList = book.map((booking) => {
         return (
-            <div className="card">
+            <div key={booking.id} className="card">
                 <div className="card-image">
                     <img src={booking.img} alt="img" />
                     <span className="card-title">{booking.title}</span>
@@ -99,7 +99,6 @@ const BookOnline = () => {
 
     return (
         <div className="container-xl">
-            <h1>Shabnam code here</h1>
             <div className="rootCard">{bookingList}</div>
         </div>
     );
