@@ -3,7 +3,7 @@ import Navbar from '../components/ShareComponent/Navbar';
 
 const bookOnline = () => (
     <div>
-        <Navbar background="blue"/>
+        <Navbar background="gray"/>
         <BookOnline />
     </div>
 );
