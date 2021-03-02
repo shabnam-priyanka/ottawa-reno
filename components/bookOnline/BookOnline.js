@@ -26,6 +26,55 @@ const book = [
         img:
             'https://i.imgur.com/scTHpKs.jpg://media.istockphoto.com/photos/beautiful-kitchen-in-new-home-with-island-pendant-lights-and-hardwood-picture-id1210163691?b=1&k=6&m=1210163691&s=170667a&w=0&h=pCFHi9gG0e800tYaLJzy7LTbjCC8mqwiKLy-geP6OWk=',
     },
+    {
+        id: 4,
+        name: 'Family Room',
+        details: 'We are specialized in modern kitchen design',
+        img:
+            'https://i.imgur.com/bc5K5Tu.jpg',
+    },
+    {
+        id: 5,
+        name: 'Porches & Decks',
+        details: 'Quality of our work will fulfill your dream living area',
+        img:
+            'https://i.imgur.com/JdP4fwX.jpg',
+    },
+    {
+        id: 6,
+        name: 'Stairs & Railings',
+        details: 'We will delivery the best Modern bedroom',
+        img:
+            'https://i.imgur.com/TKI0key.jpg',
+    },
+    {
+        id: 7,
+        name: 'Pergolas & Gazebos',
+        details: 'We will delivery the best Modern bedroom',
+        img:
+            'https://i.imgur.com/ArYRpwE.jpg',
+    },
+    {
+        id: 8,
+        name: 'Roof Top',
+        details: 'Quality of our work will fulfill your dream living area',
+        img:
+            'https://i.imgur.com/RkTGnqU.jpg',
+    },
+    {
+        id: 9,
+        name: 'HVAC Services',
+        details: 'We will delivery the best Modern bedroom',
+        img:
+            'https://i.imgur.com/k4jXA7y.jpg',
+    },
+    {
+        id: 10,
+        name: 'Mold Removal & Treatment',
+        details: 'We will delivery the best Modern bedroom',
+        img:
+            'https://i.imgur.com/NpOiyM9.jpg',
+    },
 ];
 
 const BookOnline = () => {
@@ -49,7 +98,7 @@ const BookOnline = () => {
     });
 
     return (
-        <div>
+        <div className="container-xl">
             <h1>Shabnam code here</h1>
             <div className="rootCard">{bookingList}</div>
         </div>

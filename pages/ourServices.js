@@ -4,7 +4,7 @@ import Navbar from '../components/ShareComponent/Navbar';
 
 const ourServices = () => (
     <div>
-        <Navbar background="red"/>
+        <Navbar background="gray"/>
         <OurServices />
     </div>
 );
