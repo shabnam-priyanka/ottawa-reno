@@ -1,4 +1,5 @@
 import React from 'react';
+import BookingCard from '../components/ShareComponent/BookingCard';
 import Navbar from '../components/ShareComponent/Navbar';
 
 const booking_checkout_form = () => {
@@ -7,8 +8,10 @@ const booking_checkout_form = () => {
         <>
             <Navbar background="#27211E" />
             <div className="container-xl">
-                {/* form starts */}
-                <h3>Customer Information</h3>
+                <div className="row">
+                    <div className="col-md-7">
+{/* form starts */}
+<h3>Customer Information</h3>
                 <form>
                     <div className="row">
                         <div className="col">
@@ -154,6 +157,11 @@ const booking_checkout_form = () => {
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                     </form> */}
+                    </div>
+                    <div className="col-md-5">
+                        <BookingCard/>
+                    </div>
+                </div>
             </div>
         </>
     );

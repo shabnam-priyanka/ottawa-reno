@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import BookingCard from '../components/ShareComponent/BookingCard';
 import Navbar from '../components/ShareComponent/Navbar';
 
 const morning = [
@@ -83,7 +84,9 @@ const bookings_checkout_calendar = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-4">wow</div>
+                        <div className="col-md-4">
+                            <BookingCard/>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -92,3 +95,6 @@ const bookings_checkout_calendar = () => {
 };
 
 export default bookings_checkout_calendar;
+
+
+

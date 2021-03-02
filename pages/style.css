@@ -269,12 +269,6 @@ $$$ renovations-area ended $$$ Contact Us-area style start
   margin: 15px 0px;
 }
 
-@media (max-width: 767px) {
-  .checkout_calendar_area {
-    height: auto;
-  }
-}
-
 .time-cards {
   padding: 7px;
   border: 1px solid rgb(168, 180, 179);
@@ -287,4 +281,49 @@ $$$ renovations-area ended $$$ Contact Us-area style start
   border: 1px solid rgb(100, 94, 94);
   background-color: rgb(236, 229, 229);
   font-weight: 700;
+}
+
+.booking-card {
+  border: 2px solid #99a166;
+  padding: 20px;
+  position: fixed;
+  width: 300px;
+}
+
+.booking-card h4 {
+  font-weight: 400;
+}
+
+.booking-card h5 {
+  font-weight: 500;
+  margin: 20px 0px;
+}
+
+.booking-card hr {
+  height: 1px;
+  background-color: #7d8260;
+}
+
+.booking-card p {
+  font-size: 17px;
+}
+
+.booking-card button {
+  width: 100%;
+  padding: 7px 0px;
+  font-weight: 900;
+  background-color: #7d8260;
+  color: #fff;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .checkout_calendar_area {
+    height: auto;
+  }
+  .booking-card {
+    position: static;
+    width: auto;
+    text-align: center;
+  }
 }
