@@ -1,5 +1,5 @@
+import Link from 'next/link';
 import React from 'react';
-
 const Footer = () => {
     const s = 9;
     return (
@@ -12,11 +12,16 @@ const Footer = () => {
                     <strong>helpmeottawareno@gmail.com</strong>{' '}
                 </p>
                 <p>
+                <p>1547 Merivale Rd </p> 
+                <p>Nepean,  ON K2G 3J4</p>
                     <strong>613-861-1566 </strong>{' '}
+                    <Link href="/contactUs">
+                       <a><img src="/facebook.png" alt="" className='facebook'/></a> 
+                    </Link>
                 </p>
             </div>
             <p className="text-center p-3 mt-0 mb-0 text-white">
-                Copyright Ottawa-Reno {new Date().getFullYear()}{' '}
+             Copyright Ottawa-Reno {new Date().getFullYear()}{' '}
             </p>
         </div>
     );

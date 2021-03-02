@@ -94,19 +94,7 @@ const booking_checkout_form = () => {
                         </div>
                     </div>
                     <div className="form-group">
-                        {/* <select class="form-control">
-                                <option>Bedroom Renovation</option>
-                                <option>Living Room Renovation</option>
-                                <option>Kitchen Renovation</option>
-                                <option>Family Room Renovation</option>
-                                <option>Porches & Decks </option>
-                                <option>Stairs & Railings Renovation</option>
-                                <option>Pergolas & Gazebos</option>
-                                <option>Roof Top </option>
-                                <option>HVAC Services</option>
-                                <option>Mold Removal & Treatment</option>
-                                </select> */}
-
+                
                         <div className="form-group">
                             <label htmlFor="exampleFormControlTextarea1">
                                 <strong>Detail Message</strong>{' '}

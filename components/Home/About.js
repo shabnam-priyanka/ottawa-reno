@@ -7,14 +7,9 @@ const About = () => {
             <section className="container-xl">
                 <div className="row d-flex align-items-center">
                     <div className="col-md">
-                        <h2>About Our Company</h2>
+                        <h2>About Ottawa Reno</h2>
                         <p>
-                            Our company is a specialist in home design and total home renovation. We
-                            provide service locally in Ottawa as well as the Greater Ottawa Area.
-                            Our core values revolve around providing our clients with excellent
-                            customer service and a worry-free renovation process. Whether you want
-                            an addition to your current home, renovate your kitchen or bathroom we
-                            will work with you every step of the way to ensure your satisfaction.
+                        We are Trained professionals who can help you renovate your house. We are a Proud and local Canadian owned company. We offer any cosmetic renovation work you may need done in your home such as bathrooms, kitchens and basements! If it is Quality work you are looking for, we have you well covered!  With over 10 years of experience, we have been handling projects with the skill and professionalism our clients have come to respect. We always stand behind our work, with customer satisfaction being our #1 priority.
                         </p>
                     </div>
                     <div className="col-md">

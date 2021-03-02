@@ -13,20 +13,9 @@ const FakeDataRenovations = [
         name: "Kitchen Renovations",
         time: "1 hr",
     },
-    // {
-    //     id: 3,
-    //     img: "https://i.imgur.com/tkn4HoF.jpg",
-    //     name: "Bedroom Renovation",
-    //     time: "1 hr",
-    // },
-    // {
-    //     id: 4,
-    //     img: "https://www.w3schools.com/css/img_forest.jpg",
-    //     name: " Renovations",
-    //     time: "1 hr",
-    // },
+   
     {
-        id: 5,
+        id: 3,
         img: "https://i.imgur.com/JdP4fwX.jpg",
         name: "Porches & Decks",
         time: "1 hr",
@@ -49,6 +38,7 @@ const Renovations = () => {
                             <div className="col-lg-6 renovations-content-div">
                                 <h2>{rno.name}</h2>
                                 <hr />
+                                <p></p>
                                 <h5>1 hr</h5>
                                 <button type="button">Book Free Consultation</button>
                             </div>

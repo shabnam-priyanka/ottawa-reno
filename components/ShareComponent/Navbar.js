@@ -7,7 +7,9 @@ const Navbar = ({background}) => (
             style={{ background: background }}
             className="navbar navbar-expand-lg navbar-light"
         >
-            {/* <a className="navbar-brand" href="#">Navbar</a> */}
+            <a className="navbar-brand" href="#">
+                <img src="/reno.jpg" alt="" className='logo'/>
+            </a>
             <button
                 className="navbar-toggler"
                 type="button"
@@ -30,7 +32,7 @@ const Navbar = ({background}) => (
                     </li>
 
                     <li className="nav-item">
-                        <Link href="/">
+                        <Link href="/aboutUs">
                             <a className="nav-link">About Us</a>
                         </Link>
                     </li>
@@ -57,7 +59,13 @@ const Navbar = ({background}) => (
                         <Link href="/contactUs">
                             <a className="nav-link">Contact Us</a>
                         </Link>
-                        <span className="navNumber">613-413-7941</span>
+                        <span className="navNumber">613-413-7941 </span>
+
+                        {/* FACEBOOK icon */}
+                        {/* <Link href="/contactUs">
+                       <a><img src="/facebook.png" alt="" className='facebook'/></a> 
+                        </Link> */}
+                        
                     </li>
                 </ul>
             </div>

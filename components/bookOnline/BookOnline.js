@@ -75,11 +75,11 @@ const BookOnline = () => {
                     <span className="card-title">{booking.title}</span>
                 </div>
                 
-                <div className="card-content">
+                <div className="card-content text-center">
                     <p>{booking.name}</p>
                     <div className="card-action">
-                        <Link href="/">
-                            <a>Book for Consultation</a>
+                        <Link href="/bookings_checkout_calendar">
+                            <a><button className='book-btn mt-3'>Book for Consultation</button> </a>
                         </Link>
                     </div>
                 </div>

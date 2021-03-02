@@ -1,7 +1,19 @@
 /***************************************************$$
 $$$$$$$$ Navbar area style start
 ****************************************************$$*/
+/* logo style here */
+.logo {
+  height: 50px;
+  width: 100px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+.facebook {
+  height: 30px;
+  width: 30px;
+}
 
+/* ******************** */
 .navbar {
   /* background-color: rgba(255, 217, 0, 0.349); */
   height: 90px;
