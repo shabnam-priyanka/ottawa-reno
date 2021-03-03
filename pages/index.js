@@ -5,11 +5,11 @@ import Renovations from '../components/Home/Renovations';
 
 export default function Home() {
     return (
-        <>
+        <div>
             <Header />
             <About />
             <Renovations />
             <ContactUs/>
-        </>
+        </div>
     );
 }

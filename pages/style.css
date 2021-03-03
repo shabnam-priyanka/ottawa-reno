@@ -28,7 +28,7 @@ $$$$$$$$ Navbar area style start
 $$$ Navbar ended $$$ header-area style start
 ****************************************************$$*/
 .header-area {
-  background-image: url("https://cdn.pixabay.com/photo/2016/01/19/17/08/vintage-1149558__340.jpg");
+  background-image: url("https://i.imgur.com/eMHlwh3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -62,7 +62,7 @@ $$$ about-area ended $$$ renovations-area style start
 ****************************************************$$*/
 
 .renovations-area {
-  background-color: #3e3e3e;
+  background-color: #7c7c7c;
   padding: 50px 0px;
 }
 
@@ -183,7 +183,7 @@ $$$ renovations-area ended $$$ Contact Us-area style start
 .*/
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Book Online style area start %%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% router =  Book Online style area start %%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 /***************************************************$$
@@ -240,5 +240,36 @@ $$$ renovations-area ended $$$ Contact Us-area style start
 .*/
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Book Online style area start %%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% router=  our Services style area start %%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.ourServices-area {
+  background-color: #3e3e3e;
+}
+
+/* .
+. 
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.*/
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* %%%%%%%%%%%%%%%%%%%% router=  bookings_checkout_calendar style area start %%%%%%%%%%%%%%%%%%%%%%%%*/
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.checkout_calendar_area {
+  height: 650px;
+}
+
+@media (max-width: 767px) {
+  .checkout_calendar_area {
+    height: auto;
+  }
+}

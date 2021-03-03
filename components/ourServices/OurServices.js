@@ -48,7 +48,7 @@ const images = [
 
 const OurServices = () => {
     return (
-        <div>
+        <div className="ourServices-area">
             <ImageGallery items={images} />
         </div>
     );

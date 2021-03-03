@@ -10,7 +10,7 @@ const Footer = () => {
         <p><strong>helpmeottawareno@gmail.com</strong> </p>
         <p><strong>613-861-1566 </strong> </p>
       </div>
-    <p className='text-center p-3 mt-0 text-white' >Copyright Ottawa-Reno {(new Date()).getFullYear()} </p>
+    <p className='text-center p-3 mt-0 mb-0 text-white' >Copyright Ottawa-Reno {(new Date()).getFullYear()} </p>
 </div>
   );
 };
