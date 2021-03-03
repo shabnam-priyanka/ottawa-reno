@@ -3,10 +3,59 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import Navbar from '../components/ShareComponent/Navbar';
 
+const morning = [
+    { time: '9:00am', date: '2021-3-18' },
+    { time: '9:30am', date: '2021-3-18' },
+    { time: '10:00am', date: '2021-3-18' },
+    { time: '10:30am', date: '2021-3-18' },
+    { time: '11:00am', date: '2021-3-18' },
+    { time: '11:30am', date: '2021-3-18' }
+];
+
+const afternoon = [
+    { time: '12:00am', date: '2021-3-18' },
+    { time: '12:30am', date: '2021-3-18' },
+    { time: '01:00am', date: '2021-3-18' },
+    { time: '01:30am', date: '2021-3-18' },
+    { time: '02:00am', date: '2021-3-18' },
+    { time: '02:30am', date: '2021-3-18' },
+    { time: '03:00am', date: '2021-3-18' },
+    { time: '03:30am', date: '2021-3-18' },
+    { time: '04:00am', date: '2021-3-18' },
+    { time: '04:30am', date: '2021-3-18' }
+]
+
+const evening = [
+    { time: '04:30am', date: '2021-3-18' }
+]
 
 const bookings_checkout_calendar = () => {
     const [value, onChange] = useState(new Date());
     console.log(value)
+
+
+    var today = value;
+    var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate()
+    console.log(date)
+
+    const morningDates = morning.map((morn) => {
+        return (
+            <div className="time-cards">{morn.time}</div>
+        )
+    })
+
+    const afternoonDates = morning.map((afte) => {
+        return (
+            <div className="time-cards">{afte.time}</div>
+        )
+    })
+
+    const eveningDates = morning.map((eve) => {
+        return (
+            <div className="time-cards">{eve.time}</div>
+        )
+    })
+
     return (
         <>
             <Navbar background="#27211E" />
@@ -14,26 +63,33 @@ const bookings_checkout_calendar = () => {
 
                 <section className="container-xl">
                     <div className="row">
-                        <div className="col-md d-flex justify-content-center">
-                            <div>
-                                {/* <h5>today={()}</h5> */}
-                                {/* <button onClick={()=>onChange(new Date().getDay())}>today</button> */}
-                            <Calendar
-                                
-                                onChange={onChange}
-                                value={value}
-                                // selectRange={true}
-                                // showDoubleView={true}
-                                showFixedNumberOfWeeks={true}
-                            />
+                        <div className="col-md-8">
+                        <h5 className="text-center">{date}</h5>
+                            <div className="d-flex justify-content-center">
+                                <Calendar
+                                    onChange={onChange}
+                                    value={value}
+                                    showFixedNumberOfWeeks={true}
+                                />
+                               
                             </div>
+                            <div className="row text-center mt-5">
+                                    <div className="col-md-4">
+                                        <h5>Morning</h5>
+                                        {morningDates}</div>
+                                    <div className="col-md-4">
+                                        <h5>Afternoon</h5>
+                                        {afternoonDates}</div>
+                                    <div className="col-md-4">
+                                        <h5>Evening</h5>
+                                        {eveningDates}</div>
+                                </div>
                         </div>
-                        <div className="col-md">
+                        <div className="col-md-4">
                             wow
                     </div>
                     </div>
                 </section>
-                <h1>nila</h1>
             </div>
         </>
     );

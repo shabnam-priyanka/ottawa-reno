@@ -265,11 +265,26 @@ $$$ renovations-area ended $$$ Contact Us-area style start
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 .checkout_calendar_area {
-  height: 650px;
+  /* height: 650px; */
+  margin: 15px 0px;
 }
 
 @media (max-width: 767px) {
   .checkout_calendar_area {
     height: auto;
   }
+}
+
+.time-cards {
+  padding: 7px;
+  border: 1px solid rgb(168, 180, 179);
+  margin: 10px 0px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.time-cards:hover {
+  border: 1px solid rgb(100, 94, 94);
+  background-color: rgb(236, 229, 229);
+  font-weight: 700;
 }
