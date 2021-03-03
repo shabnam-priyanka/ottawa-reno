@@ -40,7 +40,7 @@ const Renovations = () => {
         <div className="renovations-area align-items-center">
             {renoDaa.map(rno =>
 
-                <section className="container-xl">
+                <section key={rno.id} className="container-xl">
                     <div className="renovation-contents">
                         <div className="row">
                             <div className="col-lg-7 renovations-img-div">

@@ -85,6 +85,7 @@ const BookOnline = () => {
                     <img src={booking.img} alt="img" />
                     <span className="card-title">{booking.title}</span>
                 </div>
+                
                 <div className="card-content">
                     <p>{booking.details}</p>
                     <div className="card-action">

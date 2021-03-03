@@ -7,7 +7,7 @@ $$$$$$$$ Navbar area style start
   height: 90px;
   padding-bottom: 0px;
   padding-top: 65px;
-  box-shadow: 0 4px 2px -2px gray;
+  box-shadow: 0 4px 2px -2px rgb(88, 87, 87);
 }
 
 .navNumber {
@@ -126,6 +126,49 @@ $$$ about-area ended $$$ renovations-area style start
 /***************************************************$$
 $$$ renovations-area ended $$$ Contact Us-area style start
 ****************************************************$$*/
+
+.contact-area {
+  background-color: #7c7c7c;
+}
+
+.input-field input {
+  color: #fff;
+}
+.input-field label {
+  color: #fff;
+}
+
+/* .input-field textarea {
+  color: #fff;
+} */
+
+/* label focus color */
+.input-field input[type="text"]:focus + label {
+  color: rgb(255, 255, 255) !important;
+  font-weight: bold;
+}
+
+/* label underline focus color */
+.input-field input[type="text"]:focus {
+  border-bottom: 1px solid rgb(255, 255, 255) !important;
+}
+
+.contact-submit-btn {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.205);
+  color: #fff;
+}
+
+.contact-area {
+  height: 650px;
+}
+
+@media (max-width: 600px) {
+  .contact-area {
+    height: auto;
+  }
+}
+
 /* .
 . 
 .
@@ -135,7 +178,6 @@ $$$ renovations-area ended $$$ Contact Us-area style start
 .
 .
 .
-
 .
 .
 .*/
@@ -183,3 +225,20 @@ $$$ renovations-area ended $$$ Contact Us-area style start
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+/* .
+. 
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.*/
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Book Online style area start %%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */

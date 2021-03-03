@@ -6,7 +6,10 @@ const Layout = ({ children }) => (
         <Head>
             <title>Ottawa-Reno</title>
             {/* materialize  */}
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+            <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+            />
             {/* css bootstrap */}
             <link
                 rel="stylesheet"
@@ -14,7 +17,6 @@ const Layout = ({ children }) => (
                 integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
                 crossOrigin="anonymous"
             />
-
         </Head>
 
         {children}
@@ -38,9 +40,8 @@ const Layout = ({ children }) => (
             crossOrigin="anonymous"
         />
 
-
         {/* material javascript link */}
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" />
     </div>
 );
 
