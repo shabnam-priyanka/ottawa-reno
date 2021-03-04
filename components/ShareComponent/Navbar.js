@@ -57,10 +57,6 @@ const Navbar = ({ background }) => (
                         </Link>
                         <span className="navNumber">613-413-7941 </span>
 
-                        {/* FACEBOOK icon */}
-                        {/* <Link href="/contactUs">
-                       <a><img src="/facebook.png" alt="" className='facebook'/></a> 
-                        </Link> */}
                     </li>
                 </ul>
             </div>
