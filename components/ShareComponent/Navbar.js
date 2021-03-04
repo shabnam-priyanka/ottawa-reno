@@ -40,7 +40,7 @@ const Navbar = ({ background }) => (
                     </li>
 
                     <li className="nav-item">
-                        <Link href="/">
+                        <Link href="/ourWork">
                             <a className="nav-link">Our Work</a>
                         </Link>
                     </li>
