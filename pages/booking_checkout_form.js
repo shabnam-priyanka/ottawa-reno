@@ -10,110 +10,110 @@ const booking_checkout_form = () => {
             <div className="container-xl">
                 <div className="row">
                     <div className="col-md-7">
-{/* form starts */}
-<h3>Customer Information</h3>
-                <form>
-                    <div className="row">
-                        <div className="col">
-                            <input
-                                type="text"
-                                className="form-control"
-                                placeholder="First name *"
-                                required
-                            />
-                        </div>
-                        <div className="col">
-                            <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Last name *"
-                                required
-                            />
-                        </div>
-                    </div>
-                    <div className="form-row">
-                        <div className="form-group col-md-6">
-                            <label htmlFor="inputEmail4">
-                                <strong>Email *</strong>{' '}
-                            </label>
-                            <input
-                                type="email"
-                                className="form-control"
-                                id="inputEmail4"
-                                required
-                            />
-                        </div>
-                        <div className="form-group col-md-6">
-                            <label htmlFor="inputPhoneNumber">
-                                <strong>Phone Number *</strong>{' '}
-                            </label>
-                            <input
-                                type="number"
-                                className="form-control"
-                                id="inputPassword4"
-                                required
-                            />
-                        </div>
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="inputAddress">
-                            <strong>Address *</strong>{' '}
-                        </label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            id="inputAddress"
-                            placeholder="1234 Main St"
-                            required
-                        />
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="inputAddress2">
-                            <strong>Address 2</strong>{' '}
-                        </label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            id="inputAddress2"
-                            placeholder="Apartment, studio, or floor"
-                        />
-                    </div>
-                    <div className="form-row">
-                        <div className="form-group col-md-6">
-                            <label htmlFor="inputCity">
-                                <strong>City *</strong>{' '}
-                            </label>
-                            <input type="text" className="form-control" id="inputCity" required />
-                        </div>
+                        {/* form starts */}
+                        <h3>Customer Information</h3>
+                        <form>
+                            <div className="row">
+                                <div className="col">
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="First name *"
+                                        required
+                                    />
+                                </div>
+                                <div className="col">
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="Last name *"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div className="form-row">
+                                <div className="form-group col-md-6">
+                                    <label htmlFor="inputEmail4">
+                                        <strong>Email *</strong>{' '}
+                                    </label>
+                                    <input
+                                        type="email"
+                                        className="form-control"
+                                        id="inputEmail4"
+                                        required
+                                    />
+                                </div>
+                                <div className="form-group col-md-6">
+                                    <label htmlFor="inputPhoneNumber">
+                                        <strong>Phone Number *</strong>{' '}
+                                    </label>
+                                    <input
+                                        type="number"
+                                        className="form-control"
+                                        id="inputPassword4"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="inputAddress">
+                                    <strong>Address *</strong>{' '}
+                                </label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="inputAddress"
+                                    placeholder="1234 Main St"
+                                    required
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="inputAddress2">
+                                    <strong>Address 2</strong>{' '}
+                                </label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="inputAddress2"
+                                    placeholder="Apartment, studio, or floor"
+                                />
+                            </div>
+                            <div className="form-row">
+                                <div className="form-group col-md-6">
+                                    <label htmlFor="inputCity">
+                                        <strong>City *</strong>{' '}
+                                    </label>
+                                    <input type="text" className="form-control" id="inputCity" required />
+                                </div>
 
-                        <div className="form-group col-md-2">
-                            <label htmlFor="inputZip">
-                                <strong>Postal Code *</strong>{' '}
-                            </label>
-                            <input type="text" className="form-control" id="inputZip" required />
-                        </div>
-                    </div>
-                    <div className="form-group">
-                
-                        <div className="form-group">
-                            <label htmlFor="exampleFormControlTextarea1">
-                                <strong>Detail Message</strong>{' '}
-                            </label>
-                            <textarea
-                                className="form-control"
-                                id="exampleFormControlTextarea1"
-                                rows="3"
-                            />
-                        </div>
-                    </div>
-                    <button type="submit" className="btn btn-primary">
-                        Submit
+                                <div className="form-group col-md-2">
+                                    <label htmlFor="inputZip">
+                                        <strong>Postal Code *</strong>{' '}
+                                    </label>
+                                    <input type="text" className="form-control" id="inputZip" required />
+                                </div>
+                            </div>
+                            <div className="form-group">
+
+                                <div className="form-group">
+                                    <label htmlFor="exampleFormControlTextarea1">
+                                        <strong>Detail Message</strong>{' '}
+                                    </label>
+                                    <textarea
+                                        className="form-control"
+                                        id="exampleFormControlTextarea1"
+                                        rows="3"
+                                    />
+                                </div>
+                            </div>
+                            <button type="submit" className="btn btn-primary">
+                                Submit
                     </button>
-                </form>
-                <br />
-                <p>* Required Info</p>
-                <br />
-                {/* <form>
+                        </form>
+                        <br />
+                        <p>* Required Info</p>
+                        <br />
+                        {/* <form>
             <div class="row">
                 <div class="col">
                 <input type="text" class="form-control" placeholder="First name"/>
@@ -147,7 +147,7 @@ const booking_checkout_form = () => {
                     </form> */}
                     </div>
                     <div className="col-md-5">
-                        <BookingCard/>
+                        <BookingCard />
                     </div>
                 </div>
             </div>

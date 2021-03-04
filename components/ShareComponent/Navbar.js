@@ -2,13 +2,13 @@ import Link from 'next/link';
 
 const Navbar = ({background}) => (
 
-    <div>
+    <div className="navbar-bg">
         <nav
             style={{ background: background }}
             className="navbar navbar-expand-lg navbar-light"
         >
             <a className="navbar-brand" href="#">
-                <img src="/reno.jpg" alt="" className='logo'/>
+                <img src="/reno.jpg" alt="" className='logo img-fluid'/>
             </a>
             <button
                 className="navbar-toggler"

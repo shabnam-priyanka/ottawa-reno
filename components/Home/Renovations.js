@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const FakeDataRenovations = [
@@ -13,7 +14,7 @@ const FakeDataRenovations = [
         name: "Kitchen Renovations",
         time: "1 hr",
     },
-   
+
     {
         id: 3,
         img: "https://i.imgur.com/JdP4fwX.jpg",
@@ -40,7 +41,9 @@ const Renovations = () => {
                                 <hr />
                                 <p></p>
                                 <h5>1 hr</h5>
-                                <button type="button">Book Free Consultation</button>
+                                <Link href="/bookings_checkout_calendar">
+                                    <a><button type="button">Book Free Consultation</button></a>
+                                </Link>
                             </div>
                         </div>
                     </div>

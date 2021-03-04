@@ -8,10 +8,6 @@ $$$$$$$$ Navbar area style start
   margin-bottom: 50px;
   border-radius: 10px;
 }
-.facebook {
-  height: 30px;
-  width: 30px;
-}
 
 /* ******************** */
 .navbar {
@@ -34,6 +30,32 @@ $$$$$$$$ Navbar area style start
 
 .nav-link {
   color: #fff !important;
+}
+
+.navbar-toggler {
+  background-color: #fff;
+  position: relative;
+  top: -20px;
+  font-size: 25px;
+}
+
+@media (max-width: 995px) {
+  .navbar {
+    padding-bottom: 50px;
+    padding-top: 10px;
+  }
+  .logo {
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+  }
+  .nav-item {
+    background-color: #3e3e3e;
+    text-align: center;
+    z-index: 5;
+    font-weight: bold;
+    border: 1px solid #fff;
+  }
 }
 
 /***************************************************$$
@@ -338,4 +360,30 @@ $$$ renovations-area ended $$$ Contact Us-area style start
     width: auto;
     text-align: center;
   }
+}
+
+/* .
+. 
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.*/
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* %%%%%%%%%%%%%%%%%%%% router=  footer style area start %%%%%%%%%%%%%%%%%%%%%%%%*/
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+footer {
+  background-color: #3e3e3e;
+  padding: 40px 0px;
+}
+
+.facebook {
+  height: 30px;
+  width: 30px;
 }

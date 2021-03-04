@@ -7,8 +7,8 @@ const Header = () => {
         <div className="header-area">
             <Navbar background="rgba(255, 255, 255, 0)" />
             <header className="container-xl">
-                <div className="row">
-                    <div className="col-md p-0" />
+                {/* <div className="row">
+                    <div className="col-md p-0"></div>
                     <div className="col-md text-center p-0">
                         <img
                             className="img-fluid"
@@ -16,7 +16,7 @@ const Header = () => {
                             alt="img"
                         />
                     </div>
-                </div>
+                </div> */}
             </header>
         </div>
     );

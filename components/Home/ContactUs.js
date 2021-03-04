@@ -1,8 +1,21 @@
+import emailjs from 'emailjs-com';
 import React from 'react';
-
 // used materialize form not sure how to fix it
 const ContactUs = () => {
-    const kd = 4;
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        // console.log(e.target)
+        emailjs.sendForm('service_sec3z77', 'template_mluyb9a', e.target, 'user_0yuaPtVVcqCviBr9iMWOc')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    }
+
+
     return (
         <div className="contact-area d-flex align-items-center">
             <section className="container-xl">
@@ -15,38 +28,46 @@ const ContactUs = () => {
                     </div>
                     <div className="col-md">
                         <div className="row">
-                            <form className="col s12">
+                            <form onSubmit={sendEmail} className="col s12">
                                 <div className="row mb-0">
                                     <div className="input-field col s6">
-                                        <input id="first_name" type="text" className="validate" />
+                                        <input name="firstName" id="first_name" type="text" className="validate" />
                                         <label htmlFor="first_name">First Name</label>
                                     </div>
                                     <div className="input-field col s6">
-                                        <input id="last_name" type="text" className="validate" />
+                                        <input name="lastName" id="last_name" type="text" className="validate" />
                                         <label htmlFor="last_name">Last Name</label>
                                     </div>
                                 </div>
                                 <div className="row mb-0">
                                     <div className="input-field col s6">
-                                        <input id="phone" type="text" className="validate" />
+                                        <input name="phone" id="phone" type="text" className="validate" />
                                         <label htmlFor="phone">phone</label>
                                     </div>
                                     <div className="input-field col s6">
-                                        <input id="Address" type="text" className="validate" />
+                                        <input name="address" id="Address" type="text" className="validate" />
                                         <label htmlFor="Address">Address</label>
                                     </div>
                                 </div>
 
                                 <div className="row mb-0">
                                     <div className="input-field col s12">
-                                        <input id="subject" type="text" className="validate" />
+                                        <input name="subject" id="subject" type="text" className="validate" />
                                         <label htmlFor="subject">Subject</label>
+                                    </div>
+                                </div>
+
+                                <div className="row mb-0">
+                                    <div className="input-field col s12">
+                                        <input name="email" id="email" type="email" className="validate" />
+                                        <label htmlFor="email">email</label>
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     <div className="input-field col s12">
                                         <textarea
+                                            name="message"
                                             type="text"
                                             id="textarea1"
                                             className="materialize-textarea"
@@ -56,9 +77,9 @@ const ContactUs = () => {
                                 </div>
 
                                 <button
-                                    className="btn contact-submit-btn waves-effect waves-light"
+                                    className="btn contact-submit-btn "
                                     type="submit"
-                                    name="action"
+                                    value="Send"
                                 >
                                     Submit
                                 </button>
