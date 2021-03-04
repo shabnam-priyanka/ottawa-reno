@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { BookingContext } from '../components/Layout';
 import BookingCard from '../components/ShareComponent/BookingCard';
 import Navbar from '../components/ShareComponent/Navbar';
 
 const booking_checkout_form = () => {
-    const e = 6;
+    const [bookingData, setBookingData] = useContext(BookingContext);
+
     return (
         <>
             <Navbar background="#27211E" />
@@ -83,18 +85,27 @@ const booking_checkout_form = () => {
                                     <label htmlFor="inputCity">
                                         <strong>City *</strong>{' '}
                                     </label>
-                                    <input type="text" className="form-control" id="inputCity" required />
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        id="inputCity"
+                                        required
+                                    />
                                 </div>
 
                                 <div className="form-group col-md-2">
                                     <label htmlFor="inputZip">
                                         <strong>Postal Code *</strong>{' '}
                                     </label>
-                                    <input type="text" className="form-control" id="inputZip" required />
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        id="inputZip"
+                                        required
+                                    />
                                 </div>
                             </div>
                             <div className="form-group">
-
                                 <div className="form-group">
                                     <label htmlFor="exampleFormControlTextarea1">
                                         <strong>Detail Message</strong>{' '}
@@ -108,7 +119,7 @@ const booking_checkout_form = () => {
                             </div>
                             <button type="submit" className="btn btn-primary">
                                 Submit
-                    </button>
+                            </button>
                         </form>
                         <br />
                         <p>* Required Info</p>

@@ -5,11 +5,9 @@ import Footer from './ShareComponent/Footer';
 export const BookingContext = createContext();
 
 const Layout = ({ children }) => {
-
-    const [bookingData, setBookingData] = useState({})
+    const [bookingData, setBookingData] = useState('');
 
     return (
-
         <div>
             <Head>
                 <title>Ottawa-Reno</title>
@@ -27,7 +25,7 @@ const Layout = ({ children }) => {
                 />
             </Head>
 
-            <BookingContext.Provider value={{ bookingData, setBookingData }}>
+            <BookingContext.Provider value={[bookingData, setBookingData]}>
                 {children}
             </BookingContext.Provider>
 
@@ -53,9 +51,7 @@ const Layout = ({ children }) => {
             {/* material javascript link */}
             <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" />
         </div>
-
-    )
-
+    );
 };
 
 export default Layout;

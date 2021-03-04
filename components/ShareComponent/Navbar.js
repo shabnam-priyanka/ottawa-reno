@@ -1,14 +1,10 @@
 import Link from 'next/link';
 
-const Navbar = ({background}) => (
-
+const Navbar = ({ background }) => (
     <div className="navbar-bg">
-        <nav
-            style={{ background: background }}
-            className="navbar navbar-expand-lg navbar-light"
-        >
+        <nav style={{ background }} className="navbar navbar-expand-lg navbar-light">
             <a className="navbar-brand" href="#">
-                <img src="/reno.jpg" alt="" className='logo img-fluid'/>
+                <img src="/reno.jpg" alt="" className="logo img-fluid" />
             </a>
             <button
                 className="navbar-toggler"
@@ -65,7 +61,6 @@ const Navbar = ({background}) => (
                         {/* <Link href="/contactUs">
                        <a><img src="/facebook.png" alt="" className='facebook'/></a> 
                         </Link> */}
-                        
                     </li>
                 </ul>
             </div>

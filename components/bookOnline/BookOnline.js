@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { useContext } from 'react';
+import { BookingContext } from '../Layout';
 
 const book = [
     {
@@ -25,67 +27,69 @@ const book = [
     {
         id: 4,
         name: 'Family Room',
-        img:
-            'https://i.imgur.com/bc5K5Tu.jpg',
+        img: 'https://i.imgur.com/bc5K5Tu.jpg',
     },
     {
         id: 5,
         name: 'Porches & Decks',
-        img:
-            'https://i.imgur.com/JdP4fwX.jpg',
+        img: 'https://i.imgur.com/JdP4fwX.jpg',
     },
     {
         id: 6,
         name: 'Stairs & Railings',
-        img:
-            'https://i.imgur.com/TKI0key.jpg',
+        img: 'https://i.imgur.com/TKI0key.jpg',
     },
     {
         id: 7,
         name: 'Pergolas & Gazebos',
-        img:
-            'https://i.imgur.com/ArYRpwE.jpg',
+        img: 'https://i.imgur.com/ArYRpwE.jpg',
     },
     {
         id: 8,
         name: 'Roof Top',
-        img:
-            'https://i.imgur.com/RkTGnqU.jpg',
+        img: 'https://i.imgur.com/RkTGnqU.jpg',
     },
     {
         id: 9,
         name: 'HVAC Services',
-        img:
-            'https://i.imgur.com/k4jXA7y.jpg',
+        img: 'https://i.imgur.com/k4jXA7y.jpg',
     },
     {
         id: 10,
         name: 'Mold Removal & Treatment',
-        img:
-            'https://i.imgur.com/NpOiyM9.jpg',
+        img: 'https://i.imgur.com/NpOiyM9.jpg',
     },
 ];
 
 const BookOnline = () => {
-    const bookingList = book.map((booking) => {
-        return (
-            <div key={booking.id} className="card">
-                <div className="card-image">
-                    <img src={booking.img} alt="img" />
-                    <span className="card-title">{booking.title}</span>
-                </div>
-                
-                <div className="card-content text-center">
-                    <p>{booking.name}</p>
-                    <div className="card-action">
+    const [bookingData, setBookingData] = useContext(BookingContext);
+    const serviceNameSetCheckout = (serviceName) => {
+        const AllBookingData = { ...bookingData };
+        AllBookingData.serviceName = serviceName;
+        setBookingData(AllBookingData);
+    };
+
+    const bookingList = book.map((booking) => (
+        <div key={booking.id} className="card">
+            <div className="card-image">
+                <img src={booking.img} alt="img" />
+                {/* <span className="card-title">{booking.name}</span> */}
+            </div>
+
+            <div className="card-content text-center">
+                <p>{booking.name}</p>
+                <div className="card-action">
+                    <div onClick={() => serviceNameSetCheckout(booking.name)}>
                         <Link href="/bookings_checkout_calendar">
-                            <a><button className='book-btn mt-3'>Book for Consultation</button> </a>
+                            <a>
+                                <button className="book-btn mt-3">Book for Consultation</button>{' '}
+                            </a>
                         </Link>
                     </div>
                 </div>
             </div>
-        );
-    });
+        </div>
+    ));
 
     return (
         <div className="container-xl">
