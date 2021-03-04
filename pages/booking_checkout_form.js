@@ -10,10 +10,10 @@ const booking_checkout_form = () => {
         <>
             <Navbar background="#27211E" />
             <div className="container-xl">
-                <div className="row">
+                <div className="row booking-checkout-form">
                     <div className="col-md-7">
                         {/* form starts */}
-                        <h3>Customer Information</h3>
+                        <h3 className='mt-2'>Customer Information</h3>
                         <form>
                             <div className="row">
                                 <div className="col">
@@ -35,72 +35,48 @@ const booking_checkout_form = () => {
                             </div>
                             <div className="form-row">
                                 <div className="form-group col-md-6">
-                                    <label htmlFor="inputEmail4">
-                                        <strong>Email *</strong>{' '}
-                                    </label>
                                     <input
                                         type="email"
                                         className="form-control"
-                                        id="inputEmail4"
+                                        id="inputEmail4"placeholder="Email *"
                                         required
                                     />
                                 </div>
                                 <div className="form-group col-md-6">
-                                    <label htmlFor="inputPhoneNumber">
-                                        <strong>Phone Number *</strong>{' '}
-                                    </label>
                                     <input
                                         type="number"
                                         className="form-control"
-                                        id="inputPassword4"
+                                        id="inputPhoneNumber" placeholder="Phone Number *"
                                         required
                                     />
                                 </div>
                             </div>
                             <div className="form-group">
-                                <label htmlFor="inputAddress">
-                                    <strong>Address *</strong>{' '}
-                                </label>
                                 <input
                                     type="text"
                                     className="form-control"
                                     id="inputAddress"
-                                    placeholder="1234 Main St"
+                                    placeholder="Address *"
                                     required
                                 />
                             </div>
-                            <div className="form-group">
-                                <label htmlFor="inputAddress2">
-                                    <strong>Address 2</strong>{' '}
-                                </label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    id="inputAddress2"
-                                    placeholder="Apartment, studio, or floor"
-                                />
-                            </div>
+                    
                             <div className="form-row">
                                 <div className="form-group col-md-6">
-                                    <label htmlFor="inputCity">
-                                        <strong>City *</strong>{' '}
-                                    </label>
                                     <input
                                         type="text"
                                         className="form-control"
-                                        id="inputCity"
+                                        id="inputCity" placeholder="City *"
                                         required
                                     />
                                 </div>
 
                                 <div className="form-group col-md-2">
-                                    <label htmlFor="inputZip">
-                                        <strong>Postal Code *</strong>{' '}
-                                    </label>
+                                    
                                     <input
                                         type="text"
                                         className="form-control"
-                                        id="inputZip"
+                                        id="inputZip" placeholder="Postal Code *"
                                         required
                                     />
                                 </div>
@@ -124,38 +100,7 @@ const booking_checkout_form = () => {
                         <br />
                         <p>* Required Info</p>
                         <br />
-                        {/* <form>
-            <div class="row">
-                <div class="col">
-                <input type="text" class="form-control" placeholder="First name"/>
-                </div>
-                <div class="col">
-                <input type="text" class="form-control" placeholder="Last name"/>
-                </div>
-            </div>
-                                <div class="form-group">
-                        <label for="exampleFormControlInput1">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
-                    </div>
-                    <select class="form-control">
-                    <option>Bedroom Renovation</option>
-                    <option>Living Room Renovation</option>
-                    <option>Kitchen Renovation</option>
-                    <option>Family Room Renovation</option>
-                    <option>Porches & Decks </option>
-                    <option>Stairs & Railings Renovation</option>
-                    <option>Pergolas & Gazebos</option>
-                    <option>Roof Top </option>
-                    <option>HVAC Services</option>
-                    <option>Mold Removal & Treatment</option>
-                    </select>
-                   
-                  
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Detail Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    </form> */}
+                
                     </div>
                     <div className="col-md-5">
                         <BookingCard />

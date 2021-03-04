@@ -16,7 +16,7 @@ const book = [
     {
         id: 2,
         name: 'Bedroom Renovation',
-        img: 'https://i.imgur.com/tkn4HoF.jpg',
+        img: 'https://i.imgur.com/kJF7joQ.jpg',
     },
     {
         id: 3,
@@ -70,7 +70,7 @@ const BookOnline = () => {
     };
 
     const bookingList = book.map((booking) => (
-        <div key={booking.id} className="card">
+        <div key={booking.id} className="card book-online">
             <div className="card-image">
                 <img src={booking.img} alt="img" />
                 {/* <span className="card-title">{booking.name}</span> */}
@@ -82,7 +82,7 @@ const BookOnline = () => {
                     <div onClick={() => serviceNameSetCheckout(booking.name)}>
                         <Link href="/bookings_checkout_calendar">
                             <a>
-                                <button className="book-btn mt-3">Book for Consultation</button>{' '}
+                                <button className="book-btn mt-2">Book for Consultation</button>{' '}
                             </a>
                         </Link>
                     </div>

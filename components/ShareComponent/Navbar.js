@@ -55,7 +55,7 @@ const Navbar = ({ background }) => (
                         <Link href="/contactUs">
                             <a className="nav-link">Contact Us</a>
                         </Link>
-                        <span className="navNumber">613-413-7941 </span>
+                        <span className="navNumber">613-861-1566 </span>
 
                     </li>
                 </ul>

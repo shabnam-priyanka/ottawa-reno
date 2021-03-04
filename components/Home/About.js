@@ -15,7 +15,7 @@ const About = () => {
                     <div className="col-md">
                         <img
                             className="img-fluid"
-                            src="/images/AboutCompany.webp"
+                            src="https://i.imgur.com/ASOvx5l.jpg"
                             alt="about img"
                         />
                     </div>

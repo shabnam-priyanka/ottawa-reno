@@ -235,7 +235,15 @@ $$$ renovations-area ended $$$ Contact Us-area style start
     max-width: 23%;
   }
 }
-/* booking buttonwork */
+/* booking Online buttonwork *******************************************
+**************************************************************
+
+*/
+
+.book-online:hover {
+  box-shadow: 5px 5px 15px;
+}
+
 .book-btn {
   padding: 10px 0px;
   font-size: 14px;
@@ -360,6 +368,12 @@ $$$ renovations-area ended $$$ Contact Us-area style start
     width: auto;
     text-align: center;
   }
+}
+
+/*BOOKING_Checkout_form style here */
+.booking-checkout-form {
+  box-shadow: 5px 5px 10px;
+  margin-top: 20px;
 }
 
 /* .

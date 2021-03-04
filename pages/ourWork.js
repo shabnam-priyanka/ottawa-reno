@@ -1,47 +1,52 @@
 import React from 'react';
-
-const IMAGES =
-[{
-        src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-        thumbnail: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 174,
-        isSelected: true,
-        caption: "After Rain (Jeshu John - designerspics.com)"
-},
-{
-        src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-        thumbnail: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
-        tags: [{value: "Ocean", title: "Ocean"}, {value: "People", title: "People"}],
-        caption: "Boats (Jeshu John - designerspics.com)"
-},
-
-{
-        src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-        thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 212
-}]
+const work = [
+    {
+        id: 0,
+        name: 'Kitchen Renovation',
+        img: 'https://i.imgur.com/kJvTuYb.jpg',
+    },
+    {
+        id: 1,
+        name: 'Living Room Renovation',
+        img: 'https://i.imgur.com/hDHv43p.jpg',
+    },
+    {
+        id: 2,
+        name: 'Bedroom Renovation',
+        img: 'https://i.imgur.com/tkn4HoF.jpg',
+    },
+    {
+        id: 0,
+        name: 'Kitchen Renovation',
+        img: 'https://i.imgur.com/kJvTuYb.jpg',
+    },
+    {
+        id: 1,
+        name: 'Living Room Renovation',
+        img: 'https://i.imgur.com/hDHv43p.jpg',
+    },
+    {
+        id: 2,
+        name: 'Bedroom Renovation',
+        img: 'https://i.imgur.com/tkn4HoF.jpg',
+    },
+]
 
 const ourWork = () => {
     return (
         <div>
-            <div className="row">
-                <div className="col-md-3 p-3">
-                    <img src="https://cdn.pixabay.com/photo/2021/02/24/02/40/lotus-6045441__340.jpg" alt=""/>
-                </div>
-                <div className="col-md-3 p-3">
-                    <img src="https://cdn.pixabay.com/photo/2021/02/24/02/40/lotus-6045441__340.jpg" alt=""/>
-                </div>
-                <div className="col-md-3 p-3">
-                    <img src="https://cdn.pixabay.com/photo/2021/02/24/02/40/lotus-6045441__340.jpg" alt=""/>
-                </div>
-                <div className="col-md-3 p-3">
-                    <img src="https://cdn.pixabay.com/photo/2021/02/24/02/40/lotus-6045441__340.jpg" alt=""/>
-                </div>
-            </div>
+            {/* <Navbar background="#27211E" />
+            <div>
+                {
+                    work.map(hd =>
+                        <div className="card-deck">
+                            <div className="card">
+                                <img src={hd.img} className="card-img-top work-img center" alt="..."/>
+                            </div>
+                        </div>
+                )
+                }
+            </div> */}
         </div>
     );
 };
