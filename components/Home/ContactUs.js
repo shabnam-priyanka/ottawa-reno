@@ -28,9 +28,9 @@ const ContactUs = () => {
                 <div className="row  align-items-center">
                     <div className="col-md text-center">
                         <h2>ContactUs</h2>
-                        <p>Info@Vegahomes.com</p>
+                        <p> helpmeottawareno@gmail.com</p>
 
-                        <p> 1+ (613)-413-7941</p>
+                        <p> 1+ (613)-861-1566</p>
                     </div>
                     <div className="col-md">
                         <div className="row">
