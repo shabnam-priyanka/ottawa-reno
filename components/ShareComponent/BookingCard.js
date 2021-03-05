@@ -14,23 +14,45 @@ const BookingCard = (props) => {
         AllBookingData.date = date;
         AllBookingData.bookingTime = time;
         setBookingData(AllBookingData);
-    }
-    
+    };
+
     return (
         <div className="booking-card">
-            <h4>{bookingData.serviceName}</h4>
+            {bookingData.serviceName ? (
+                <h4>{bookingData.serviceName}</h4>
+            ) : (
+                <h6 style={{ color: 'red' }}>Select your package from the booking page</h6>
+            )}
+
             <h5>1 hr</h5>
             <hr />
-            <p>{date || bookingData.date}</p>
-            <p>{time || bookingData.bookingTime}</p>
-            {activeRouter.pathname == '/bookings_checkout_calendar' ? (
-                <Link href="/booking_checkout_form">
-                    <a>
-                        <button onClick={setAllBookingData}>Next</button>
-                    </a>
-                </Link>
+
+            <h5>{date || bookingData.date}</h5>
+
+            {time || bookingData.bookingTime ? (
+                <h5>{time || bookingData.bookingTime}</h5>
             ) : (
-                <button>Submit</button>
+                <h5 style={{ color: 'red' }}>Select your time</h5>
+            )}
+
+            {activeRouter.pathname === '/bookings_checkout_calendar' ? (
+                <div>
+                    {bookingData.serviceName && (time || bookingData.bookingTime) ? (
+                        <Link href="/booking_checkout_form">
+                            <a>
+                                <button type="button" onClick={setAllBookingData}>
+                                    Next
+                                </button>
+                            </a>
+                        </Link>
+                    ) : (
+                        <button type="button" className="disabled">
+                            Disabled
+                        </button>
+                    )}
+                </div>
+            ) : (
+                <span>&larr;</span>
             )}
         </div>
     );

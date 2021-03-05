@@ -1,3 +1,5 @@
+// import Router from 'next/router';
+import emailjs from 'emailjs-com';
 import React, { useContext } from 'react';
 import { BookingContext } from '../components/Layout';
 import BookingCard from '../components/ShareComponent/BookingCard';
@@ -6,107 +8,207 @@ import Navbar from '../components/ShareComponent/Navbar';
 const booking_checkout_form = () => {
     const [bookingData, setBookingData] = useContext(BookingContext);
 
+    // if (bookingData.serviceName) {
+    //     ""
+    // }
+    // else{
+    //     Router.push('/')
+    // }
+
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        // console.log(e.target)
+        emailjs.sendForm('service_sec3z77', 'template_mluyb9a', e.target, 'user_0yuaPtVVcqCviBr9iMWOc')
+            .then((result) => {
+                if (result) {
+                    alert("✅Your message has been sent successfully✅")
+                }
+                console.log(result.text);
+            }, (error) => {
+                if (error) {
+                    alert("⚠Sorry, your message could not be sent. Please try again🔄")
+                }
+                console.log(error.text);
+            });
+    }
+
     return (
         <>
             <Navbar background="#27211E" />
-            <div className="container-xl">
-                <div className="row booking-checkout-form">
-                    <div className="col-md-7">
-                        {/* form starts */}
-                        <h3 className='mt-2'>Customer Information</h3>
-                        <form>
-                            <div className="row">
-                                <div className="col">
+            <section className="checkout-form-area">
+                <div className="container-xl">
+                    <div className="row booking-checkout-form">
+                        <div className="col-md-7">
+                            {/* form starts */}
+                            <h3 className='mt-4 mb-4 text-center'>Customer Information</h3>
+                            <form onSubmit={sendEmail}>
+                                <div className="row">
+                                    <div className="col">
+                                        <input
+                                            type="text"
+                                            className="form-control"
+                                            placeholder="First name *"
+                                            name="firstName"
+                                            required
+                                        />
+                                    </div>
+                                    <div className="col">
+                                        <input
+                                            type="text"
+                                            className="form-control"
+                                            placeholder="Last name *"
+                                            name="lastName"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div className="form-row">
+                                    <div className="form-group col-md-6">
+                                        <input
+                                            type="email"
+                                            className="form-control"
+                                            id="inputEmail4"
+                                            placeholder="Email *"
+                                            name="email"
+                                            required
+                                        />
+                                    </div>
+                                    <div className="form-group col-md-6">
+                                        <input
+                                            type="number"
+                                            className="form-control"
+                                            id="inputPhoneNumber"
+                                            placeholder="Phone Number *"
+                                            name="phone"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div className="form-group">
                                     <input
                                         type="text"
                                         className="form-control"
-                                        placeholder="First name *"
-                                        required
-                                    />
-                                </div>
-                                <div className="col">
-                                    <input
-                                        type="text"
-                                        className="form-control"
-                                        placeholder="Last name *"
-                                        required
-                                    />
-                                </div>
-                            </div>
-                            <div className="form-row">
-                                <div className="form-group col-md-6">
-                                    <input
-                                        type="email"
-                                        className="form-control"
-                                        id="inputEmail4"placeholder="Email *"
-                                        required
-                                    />
-                                </div>
-                                <div className="form-group col-md-6">
-                                    <input
-                                        type="number"
-                                        className="form-control"
-                                        id="inputPhoneNumber" placeholder="Phone Number *"
-                                        required
-                                    />
-                                </div>
-                            </div>
-                            <div className="form-group">
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    id="inputAddress"
-                                    placeholder="Address *"
-                                    required
-                                />
-                            </div>
-                    
-                            <div className="form-row">
-                                <div className="form-group col-md-6">
-                                    <input
-                                        type="text"
-                                        className="form-control"
-                                        id="inputCity" placeholder="City *"
+                                        id="inputAddress"
+                                        name="address"
+                                        placeholder="Address *"
                                         required
                                     />
                                 </div>
 
-                                <div className="form-group col-md-2">
-                                    
-                                    <input
-                                        type="text"
-                                        className="form-control"
-                                        id="inputZip" placeholder="Postal Code *"
-                                        required
-                                    />
+                                <div className="form-row">
+                                    <div className="form-group col-md-6">
+                                        <input
+                                            type="text"
+                                            className="form-control"
+                                            id="inputCity"
+                                            name="city"
+                                            placeholder="City *"
+                                            required
+                                        />
+                                    </div>
+
+                                    <div className="form-group col-md-6">
+
+                                        <input
+                                            type="text"
+                                            className="form-control"
+                                            id="inputZip"
+                                            name="postalCode"
+                                            placeholder="Postal Code *"
+                                            required
+                                        />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="form-group">
+                                <div className="form-row">
+                                    <div className="form-group col-md-4">
+                                        <input
+                                            type="text"
+                                            className="form-control"
+                                            id="inputCity"
+                                            name="service"
+                                            placeholder="Service *"
+                                            required
+                                            defaultValue={bookingData.serviceName}
+                                        />
+                                    </div>
+
+                                    <div className="form-group col-md-4">
+
+                                        <input
+                                            type="text"
+                                            className="form-control"
+                                            id="inputZip"
+                                            name="date"
+                                            placeholder="Date *"
+                                            required
+                                            defaultValue={bookingData.date}
+                                        />
+                                    </div>
+                                    <div className="form-group col-md-4">
+
+                                        <input
+                                            type="text"
+                                            className="form-control"
+                                            id="inputZip"
+                                            name="time"
+                                            placeholder="Time *"
+                                            required
+                                            defaultValue={bookingData.bookingTime}
+                                        />
+                                    </div>
+                                </div>
                                 <div className="form-group">
-                                    <label htmlFor="exampleFormControlTextarea1">
-                                        <strong>Detail Message</strong>{' '}
-                                    </label>
-                                    <textarea
-                                        className="form-control"
-                                        id="exampleFormControlTextarea1"
-                                        rows="3"
-                                    />
+                                    <div className="form-group">
+                                        <label className="textarea-label" htmlFor="exampleFormControlTextarea1">
+                                            Detail Message
+                                        </label>
+                                        <textarea
+                                            className="form-control"
+                                            id="exampleFormControlTextarea1"
+                                            name="message"
+                                            rows="3"
+                                        />
+                                    </div>
                                 </div>
-                            </div>
-                            <button type="submit" className="btn btn-primary">
-                                Submit
+                                <button type="submit" className="btn btn-primary">
+                                    Submit
                             </button>
-                        </form>
-                        <br />
-                        <p>* Required Info</p>
-                        <br />
-                
-                    </div>
-                    <div className="col-md-5">
-                        <BookingCard />
+                            </form>
+                            <br />
+                            <p>* Required Info</p>
+                            <br />
+
+                        </div>
+                        <div className="col-md-5">
+                            <BookingCard />
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <style jsx>
+                {`
+                .form-control::placeholder {
+                    color: #fff;
+                  }
+                  .form-control{
+                      color: #fff;
+                      font-weight: 600;
+                  }
+                  .form-control:focus {
+                    background-color: #686767;
+                  }
+                  textarea{
+                      background: none;
+                  }
+                  .textarea-label{
+                      color: #fff;
+                      font-weight: 600;
+                  }
+                `}
+            </style>
         </>
     );
 };

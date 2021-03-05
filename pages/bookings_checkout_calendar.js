@@ -28,33 +28,35 @@ const evening = [
 ];
 
 const bookings_checkout_calendar = () => {
-
     const { bookingData, setBookingData } = useContext(BookingContext);
 
-    const [time, setTime] = useState('')
+    const [time, setTime] = useState('');
 
     const [value, onChange] = useState(new Date());
 
     const today = value;
     const date = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
 
-
     const morningDates = morning.map((morn) => (
-        <div onClick={() => setTime(morn.time + " Morning")} key={morn.time} className="time-cards">
+        <button onClick={() => setTime(`${morn.time} Morning`)} key={morn.time} className="time-cards">
             {morn.time}
-        </div>
+        </button>
     ));
 
     const afternoonDates = afternoon.map((afte) => (
-        <div onClick={() => setTime(afte.time + " Afternoon")} key={afte.time} className="time-cards">
+        <button
+            onClick={() => setTime(`${afte.time} Afternoon`)}
+            key={afte.time}
+            className="time-cards"
+        >
             {afte.time}
-        </div>
+        </button>
     ));
 
     const eveningDates = evening.map((eve) => (
-        <div onClick={() => setTime(eve.time + " Evening")} key={eve.time} className="time-cards">
+        <button onClick={() => setTime(`${eve.time} Evening`)} key={eve.time} className="time-cards">
             {eve.time}
-        </div>
+        </button>
     ));
 
     return (
@@ -72,21 +74,21 @@ const bookings_checkout_calendar = () => {
                                     showFixedNumberOfWeeks
                                 />
                             </div>
-                            <div className="row text-center mt-5">
-                                <div className="col-md-4">
-                                    <h5>Morning</h5>
+                            <div className="row row-cols-2 row-cols-sm-3 g-4text-center mt-5">
+                                <div className="col">
+                                    <h5 className="text-center">Morning</h5>
                                     {morningDates}
+                                    <div className="time-SundayOff">Sunday off</div>
                                 </div>
-                                <div className="col-md-4">
-                                    <h5>Afternoon</h5>
+                                <div className="col">
+                                    <h5 className="text-center">Afternoon</h5>
                                     {afternoonDates}
+                                    <div className="time-SundayOff">Sunday off</div>
                                 </div>
-                                <div className="col-md-4">
-                                    <h5>Evening</h5>
+                                <div className="col">
+                                    <h5 className="text-center">Evening</h5>
                                     {eveningDates}
-                                    <div className="time-cards">
-                                        Sunday off
-                                    </div>
+                                    <div className="time-SundayOff">Sunday off</div>
                                 </div>
                             </div>
                         </div>

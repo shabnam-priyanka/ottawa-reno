@@ -71,6 +71,12 @@ $$$ Navbar ended $$$ header-area style start
   height: 650px;
 }
 
+@media (max-width: 600px) {
+  .header-area {
+    height: 500px;
+  }
+}
+
 /***************************************************$$
 $$$ header area ended $$$ about-area style start
 ****************************************************$$*/
@@ -307,22 +313,42 @@ $$$ renovations-area ended $$$ Contact Us-area style start
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 .checkout_calendar_area {
-  /* height: 650px; */
-  margin: 15px 0px;
+  background-color: #7c7c7c;
+  padding: 15px 0px;
 }
 
 .time-cards {
   padding: 7px;
+  width: 100%;
   border: 1px solid rgb(168, 180, 179);
-  margin: 10px 0px;
-  cursor: pointer;
-  transition: 0.5s;
+  margin: 5px 0px;
+  transition: 0.4s;
+  background-color: rgb(236, 229, 229);
+  font-weight: bold;
 }
 
 .time-cards:hover {
   border: 1px solid rgb(100, 94, 94);
-  background-color: rgb(236, 229, 229);
+  background-color: #006edc;
   font-weight: 700;
+  color: #fff;
+}
+
+.time-cards:focus {
+  background-color: #006edc;
+  color: #fff;
+}
+
+.time-SundayOff {
+  padding: 7px;
+  width: 100%;
+  border: 1px solid red;
+  margin: 5px 0px;
+  transition: 0.4s;
+  background-color: #684545;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
 }
 
 .booking-card {
@@ -330,6 +356,8 @@ $$$ renovations-area ended $$$ Contact Us-area style start
   padding: 20px;
   position: fixed;
   width: 300px;
+  background-color: #3e3e3e;
+  color: #ffffff;
 }
 
 .booking-card h4 {
@@ -343,7 +371,7 @@ $$$ renovations-area ended $$$ Contact Us-area style start
 
 .booking-card hr {
   height: 1px;
-  background-color: #7d8260;
+  background-color: #ffffff;
 }
 
 .booking-card p {
@@ -370,11 +398,36 @@ $$$ renovations-area ended $$$ Contact Us-area style start
   }
 }
 
+/* .
+. 
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.*/
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* %%%%%%%%%%%%%%%%%%%% router=  bookings_checkout_form style area start %%%%%%%%%%%%%%%%%%%%%%%%*/
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.checkout-form-area {
+  background-color: #7c7c7c;
+}
+
+/* .form-control:focus {
+  background-color: #686767;
+} */
+
 /*BOOKING_Checkout_form style here */
-.booking-checkout-form {
+/* .booking-checkout-form {
   box-shadow: 5px 5px 10px;
   margin-top: 20px;
-}
+} */
 
 /* .
 . 
