@@ -1,3 +1,6 @@
+body {
+  background-color: #3e3e3e;
+}
 /***************************************************$$
 $$$$$$$$ Navbar area style start
 ****************************************************$$*/
@@ -109,10 +112,6 @@ $$$ about-area ended $$$ renovations-area style start
 .renovation-contents {
   position: relative;
   margin: 30px 0px;
-}
-
-.renovations-img-div img:hover {
-  opacity: 0.8;
 }
 
 .renovations-content-div {
@@ -229,49 +228,10 @@ $$$ renovations-area ended $$$ Contact Us-area style start
 /***************************************************$$
 $$$ renovations-area ended $$$ Contact Us-area style start
 ****************************************************$$*/
-@media (min-width: 600px) {
-  .rootCard {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .card {
-    margin: 10px;
-    max-width: 23%;
-  }
-}
-/* booking Online buttonwork *******************************************
-**************************************************************
-
-*/
-
-.book-online:hover {
-  box-shadow: 5px 5px 15px;
-}
-
-.book-btn {
-  padding: 10px 0px;
-  font-size: 14px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
+.bookServiceCards {
+  border: 1px solid #ffff;
+  background-color: #3e3e3e;
   color: #fff;
-  background-color: #4caf50;
-  border: none;
-  border-radius: 10px;
-  /* box-shadow: 0 9px #999; */
-  width: 100%;
-}
-
-.book-btn:hover {
-  background-color: #3e8e41;
-}
-
-.book-btn:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
 }
 
 /* .

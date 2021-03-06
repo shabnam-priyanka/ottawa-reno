@@ -40,12 +40,6 @@ const Navbar = ({ background }) => (
                     </li>
 
                     <li className="nav-item">
-                        <Link href="/ourWork">
-                            <a className="nav-link">Our Work</a>
-                        </Link>
-                    </li>
-
-                    <li className="nav-item">
                         <Link href="/bookOnline">
                             <a className="nav-link">Book Online</a>
                         </Link>

@@ -22,7 +22,7 @@ const book = [
         id: 3,
         name: 'Bathroom Renovation',
         img:
-            'https://i.imgur.com/scTHpKs.jpg://media.istockphoto.com/photos/beautiful-kitchen-in-new-home-with-island-pendant-lights-and-hardwood-picture-id1210163691?b=1&k=6&m=1210163691&s=170667a&w=0&h=pCFHi9gG0e800tYaLJzy7LTbjCC8mqwiKLy-geP6OWk=',
+            'https://i.imgur.com/scTHpKs.jpg',
     },
     {
         id: 4,
@@ -70,30 +70,58 @@ const BookOnline = () => {
     };
 
     const bookingList = book.map((booking) => (
-        <div key={booking.id} className="card book-online">
-            <div className="card-image">
-                <img src={booking.img} alt="img" />
-                {/* <span className="card-title">{booking.name}</span> */}
-            </div>
 
-            <div className="card-content text-center">
-                <p>{booking.name}</p>
-                <div className="card-action">
+        <div key={booking.id} className="col">
+            <div className="card bookServiceCards">
+                <img src={booking.img} className="card-img-top" alt="Service img" />
+                <div className="card-body">
+                    <h5 className="card-title text-truncate">{booking.name}</h5>
+                    <hr />
                     <div onClick={() => serviceNameSetCheckout(booking.name)}>
                         <Link href="/bookings_checkout_calendar">
                             <a>
-                                <button className="book-btn mt-2">Book for Consultation</button>{' '}
+                                <button>Book for Consultation</button>
                             </a>
                         </Link>
                     </div>
                 </div>
             </div>
+
+            <style jsx>{`
+                .card-title {
+                    font-size: 20px !important;
+                    font-weight: bold !important;
+                  }
+                  
+                  hr {
+                    background-color: #fff;
+                  }
+                  
+                  button {
+                    border: none;
+                    padding: 5px;
+                    width: 100%;
+                    font-weight: bold;
+                    background-color: #efefef;
+                    border-radius: 5px;
+                  }
+                  button:hover{
+                    background:#EFBA8E;
+                  }
+                  
+            `}</style>
+            
         </div>
+
     ));
 
     return (
         <div className="container-xl">
-            <div className="rootCard">{bookingList}</div>
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+                {bookingList}
+            </div>
+
+
         </div>
     );
 };
