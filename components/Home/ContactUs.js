@@ -37,35 +37,35 @@ const ContactUs = () => {
                             <form onSubmit={sendEmail} className="col s12">
                                 <div className="row mb-0">
                                     <div className="input-field col s6">
-                                        <input name="firstName" id="first_name" type="text" className="validate" />
+                                        <input name="firstName" required id="first_name" type="text" className="validate" />
                                         <label htmlFor="first_name">First Name</label>
                                     </div>
                                     <div className="input-field col s6">
-                                        <input name="lastName" id="last_name" type="text" className="validate" />
+                                        <input name="lastName" required id="last_name" type="text" className="validate" />
                                         <label htmlFor="last_name">Last Name</label>
                                     </div>
                                 </div>
                                 <div className="row mb-0">
                                     <div className="input-field col s6">
-                                        <input name="phone" id="phone" type="text" className="validate" />
+                                        <input name="phone" required id="phone" type="text" className="validate" />
                                         <label htmlFor="phone">phone</label>
                                     </div>
                                     <div className="input-field col s6">
-                                        <input name="address" id="Address" type="text" className="validate" />
+                                        <input name="address" required id="Address" type="text" className="validate" />
                                         <label htmlFor="Address">Address</label>
                                     </div>
                                 </div>
 
                                 <div className="row mb-0">
                                     <div className="input-field col s12">
-                                        <input name="subject" id="subject" type="text" className="validate" />
+                                        <input name="subject" required id="subject" type="text" className="validate" />
                                         <label htmlFor="subject">Subject</label>
                                     </div>
                                 </div>
 
                                 <div className="row mb-0">
                                     <div className="input-field col s12">
-                                        <input name="email" id="email" type="email" className="validate" />
+                                        <input name="email" required id="email" type="email" className="validate" />
                                         <label htmlFor="email">email</label>
                                     </div>
                                 </div>
@@ -76,6 +76,7 @@ const ContactUs = () => {
                                             name="message"
                                             type="text"
                                             id="textarea1"
+                                            required
                                             className="materialize-textarea"
                                         />
                                         <label htmlFor="textarea1">Type your message here</label>

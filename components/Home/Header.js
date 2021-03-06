@@ -6,9 +6,9 @@ const Header = () => {
     return (
         <div className="header-area">
             <Navbar background="rgba(255, 255, 255, 0)" />
-            <div className="header-content-area d-flex align-items-center">
+            <div className="header-content-area  text-right">
             <header className="container-xl">
-                <div className="row d-flex align-items-center">
+                <div className="row">
                     <div className="col-md-4 p-0"></div>
                     <div className="col-md-8">
                         <h1 className="header-main-content">Ottawa-Reno</h1>

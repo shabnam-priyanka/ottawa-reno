@@ -168,6 +168,7 @@ const booking_checkout_form = () => {
                                             className="form-control"
                                             id="exampleFormControlTextarea1"
                                             name="message"
+                                            required
                                             rows="3"
                                         />
                                     </div>
