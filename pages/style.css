@@ -68,10 +68,11 @@ $$$ Navbar ended $$$ header-area style start
 ****************************************************$$*/
 .header-area {
   /* background-image: url("https://i.imgur.com/eMHlwh3.jpg"); */
-  background-image: url("/Ottawa-Reno.jpg");
-  background-size: cover;
+  /* background-image: url("/Ottawa-Reno.jpg"); */
+  background: url("/Ottawa-Reno.jpg") 0 0 / cover;
+  /* background-size: cover; */
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   /* background-position: ; */
 }
@@ -118,7 +119,7 @@ $$$ Navbar ended $$$ header-area style start
     text-align: center;
   }
 }
-@media (max-width: 346px) {
+@media (max-width: 380px) {
   /* .header-content-area {
     height: 350px;
   } */
@@ -128,6 +129,13 @@ $$$ Navbar ended $$$ header-area style start
   }
   .header-main-title {
     font-size: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 336px) {
+  .header-main-content {
+    font-size: 35px;
     text-align: center;
   }
 }

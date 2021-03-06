@@ -9,8 +9,8 @@ const Header = () => {
             <div className="header-content-area  text-right">
             <header className="container-xl">
                 <div className="row">
-                    <div className="col-md-4 p-0"></div>
-                    <div className="col-md-8">
+                    <div className="col-md-3 p-0"></div>
+                    <div className="col-md-9">
                         <h1 className="header-main-content"><strong>Ottawa-Reno</strong> </h1>
                         <h5 className="header-main-title"> <strong>Best quality & trust!</strong> </h5>
                         {/* <img

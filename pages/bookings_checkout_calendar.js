@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React, { useContext, useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
@@ -61,6 +62,9 @@ const bookings_checkout_calendar = () => {
 
     return (
         <>
+        <Head>
+                <title>Ottawa-Reno || Checkout-calendar</title>
+            </Head>
             <Navbar background="#27211E" />
             <div className="checkout_calendar_area d-flex align-items-center">
                 <section className="container-xl">

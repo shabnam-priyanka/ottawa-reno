@@ -1,5 +1,6 @@
 // import Router from 'next/router';
 import emailjs from 'emailjs-com';
+import Head from 'next/head';
 import React, { useContext } from 'react';
 import { BookingContext } from '../components/Layout';
 import BookingCard from '../components/ShareComponent/BookingCard';
@@ -7,13 +8,6 @@ import Navbar from '../components/ShareComponent/Navbar';
 
 const booking_checkout_form = () => {
     const [bookingData, setBookingData] = useContext(BookingContext);
-
-    // if (bookingData.serviceName) {
-    //     ""
-    // }
-    // else{
-    //     Router.push('/')
-    // }
 
 
     const sendEmail = (e) => {
@@ -36,6 +30,9 @@ const booking_checkout_form = () => {
 
     return (
         <>
+            <Head>
+                <title>Ottawa-Reno || Checkout-form</title>
+            </Head>
             <Navbar background="#27211E" />
             <section className="checkout-form-area">
                 <div className="container-xl">

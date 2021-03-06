@@ -16,6 +16,18 @@ const BookingCard = (props) => {
         setBookingData(AllBookingData);
     };
 
+    if (bookingData.serviceName) {
+        window.onbeforeunload = function () {
+            if (bookingData.serviceName) {
+                return "If you reload this page, your previous action will be repeated";
+            } else {
+                //Don't return anything
+                ""
+            }
+        }
+    }
+    else {""}
+
     return (
         <div className="booking-card">
             {bookingData.serviceName ? (
