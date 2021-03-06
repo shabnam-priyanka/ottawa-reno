@@ -67,7 +67,8 @@ $$$$$$$$ Navbar area style start
 $$$ Navbar ended $$$ header-area style start
 ****************************************************$$*/
 .header-area {
-  background-image: url("https://i.imgur.com/eMHlwh3.jpg");
+  /* background-image: url("https://i.imgur.com/eMHlwh3.jpg"); */
+  background-image: url("/Ottawa-Reno.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -79,17 +80,20 @@ $$$ Navbar ended $$$ header-area style start
   height: 100vh;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap"); */
 
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 .header-main-content {
-  color: rgb(212, 172, 126);
+  color: rgb(241, 141, 141);
+  /* color: rgb(248, 242, 242); */
   font-size: 80px;
   text-shadow: 2px 2px #fff;
-  font-family: "Pacifico", cursive;
-  margin-top: 10vh;
+  /* font-family: "Pacifico", cursive; */
+  font-family: "Architects Daughter", cursive;
+  margin-top: 8vh;
 }
 .header-main-title {
-  color: rgb(246, 111, 0);
+  color: rgb(18, 20, 18);
   font-size: 30px;
   text-shadow: 2px 2px #fff;
   font-family: "Pacifico", cursive;
