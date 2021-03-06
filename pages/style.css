@@ -5,6 +5,7 @@ body {
 $$$$$$$$ Navbar area style start
 ****************************************************$$*/
 /* logo style here */
+
 .logo {
   height: 50px;
   width: 100px;
@@ -18,7 +19,7 @@ $$$$$$$$ Navbar area style start
   height: 90px;
   padding-bottom: 0px;
   padding-top: 65px;
-  box-shadow: 0 4px 2px -2px rgb(88, 87, 87);
+  box-shadow: 0 3px 2px -2px rgb(88, 87, 87);
 }
 
 .navNumber {
@@ -33,6 +34,7 @@ $$$$$$$$ Navbar area style start
 
 .nav-link {
   color: #fff !important;
+  padding: 10px 20px !important;
 }
 
 .navbar-toggler {
@@ -65,18 +67,64 @@ $$$$$$$$ Navbar area style start
 $$$ Navbar ended $$$ header-area style start
 ****************************************************$$*/
 .header-area {
-  background-image: url("https://i.imgur.com/eMHlwh3.jpg");
+  background-image: url("https://i.imgur.com/iQl3aNm.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   /* background-position: ; */
-  height: 650px;
+}
+
+.header-content-area {
+  height: 100vh;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+.header-main-content {
+  color: rgb(246, 70, 0);
+  font-size: 120px;
+  text-shadow: 2px 2px #fff;
+  font-family: "Lobster", cursive;
+}
+
+.header-main-title {
+  color: rgb(246, 70, 0);
+  font-size: 50px;
+  text-shadow: 2px 2px #fff;
+  font-family: "Lobster", cursive;
+}
+
+@media (max-width: 1048px) {
+  .header-main-content {
+    font-size: 90px;
+  }
 }
 
 @media (max-width: 600px) {
-  .header-area {
-    height: 500px;
+  /* .header-content-area {
+    height: 650px;
+  } */
+  .header-main-content {
+    font-size: 60px;
+    text-align: center;
+  }
+  .header-main-title {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+@media (max-width: 346px) {
+  /* .header-content-area {
+    height: 350px;
+  } */
+  .header-main-content {
+    font-size: 45px;
+    text-align: center;
+  }
+  .header-main-title {
+    font-size: 30px;
+    text-align: center;
   }
 }
 

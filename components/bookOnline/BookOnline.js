@@ -103,7 +103,7 @@ const BookOnline = () => {
                     width: 100%;
                     font-weight: bold;
                     background-color: #efefef;
-                    border-radius: 5px;
+                    border-radius: 3px;
                   }
                   button:hover{
                     background:#EFBA8E;
