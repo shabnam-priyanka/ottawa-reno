@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from 'next/link';
 import { useContext } from 'react';
 import { BookingContext } from '../Layout';
@@ -73,7 +74,14 @@ const BookOnline = () => {
 
         <div key={booking.id} className="col">
             <div className="card bookServiceCards">
-                <img src={booking.img} className="card-img-top" alt="Service img" />
+                <Image
+                    alt={`Renovations img`}
+                    src={booking.img}
+                    layout="responsive"
+                    width={700}
+                    height={475}
+                    priority
+                />
                 <div className="card-body">
                     <h5 className="card-title text-truncate">{booking.name}</h5>
                     <hr />
@@ -110,7 +118,7 @@ const BookOnline = () => {
                   }
                   
             `}</style>
-            
+
         </div>
 
     ));
