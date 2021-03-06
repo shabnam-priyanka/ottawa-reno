@@ -148,6 +148,11 @@ $$$ about-area ended $$$ renovations-area style start
   padding: 7px 20px;
   border-radius: 20px;
   margin-top: 20px;
+  font-weight: bold;
+}
+
+.renovations-content-div button:hover {
+  background-color: #efba8e;
 }
 
 @media (max-width: 900px) {

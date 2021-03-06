@@ -26,11 +26,11 @@ const ContactUs = () => {
         <div className="contact-area d-flex align-items-center">
             <section className="container-xl">
                 <div className="row  align-items-center">
-                    <div className="col-md text-center">
+                    <div className="col-md text-center text-white">
                         <h2>ContactUs</h2>
-                        <p> helpmeottawareno@gmail.com</p>
+                        <h5> helpmeottawareno@gmail.com</h5>
 
-                        <p> 1+ (613)-861-1566</p>
+                        <h6> 1+ (613)-861-1566</h6>
                     </div>
                     <div className="col-md">
                         <div className="row">
