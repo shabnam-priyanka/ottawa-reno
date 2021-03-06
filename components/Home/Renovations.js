@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useContext, useState } from 'react';
 import { BookingContext } from '../Layout';
@@ -43,7 +44,14 @@ const Renovations = () => {
                     <div className="renovation-contents">
                         <div className="row">
                             <div className="col-lg-7 renovations-img-div">
-                                <img className="img-fluid w-100" src={rno.img} alt="img" />
+                                <Image
+                                    alt={`Renovations img`}
+                                    src={rno.img}
+                                    layout="responsive"
+                                    width={700}
+                                    height={475}
+                                    priority
+                                />
                             </div>
                             <div className="col-lg-6 renovations-content-div">
                                 <h2>{rno.name}</h2>
