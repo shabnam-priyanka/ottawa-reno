@@ -15,17 +15,17 @@ const morning = [
 ];
 
 const afternoon = [
-    { time: '12:00am', date: '2021-3-18' },
-    { time: '01:00am', date: '2021-3-18' },
-    { time: '02:00am', date: '2021-3-18' },
-    { time: '03:00am', date: '2021-3-18' },
-    { time: '04:00am', date: '2021-3-18' },
-    { time: '05:00am', date: '2021-3-18' },
+    { time: '12:00pm', date: '2021-3-18' },
+    { time: '1:00pm', date: '2021-3-18' },
+    { time: '2:00pm', date: '2021-3-18' },
+    { time: '3:00pm', date: '2021-3-18' },
+    { time: '4:00pm', date: '2021-3-18' },
+    { time: '5:00pm', date: '2021-3-18' },
 ];
 
 const evening = [
-    { time: '06:00am', date: '2021-3-18' },
-    { time: '07:00am', date: '2021-3-18' },
+    { time: '6:00pm', date: '2021-3-18' },
+    // { time: '7:00pm', date: '2021-3-18' },
 ];
 
 const bookings_checkout_calendar = () => {
