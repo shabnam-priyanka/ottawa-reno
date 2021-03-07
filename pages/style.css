@@ -31,7 +31,7 @@ $$$$$$$$ Navbar area style start
 
 .nav-link {
   color: #fff !important;
-  padding: 10px 20px !important;
+  padding: 0px 20px !important;
 }
 
 .navbar-toggler {
@@ -63,7 +63,7 @@ $$$ Navbar ended $$$ header-area style start
   /* background-size: cover; */
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* background-position: center; */
+  background-position: center;
   /* background-position: ; */
 }
 
