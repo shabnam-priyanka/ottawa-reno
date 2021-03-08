@@ -92,9 +92,9 @@ $$$ Navbar ended $$$ header-area style start
   margin-top: 8vh;
 }
 .header-main-title {
-  color: rgb(75, 73, 77);
+  color: rgb(3, 2, 10);
   font-size: 30px;
-  text-shadow: 2px 2px #fff;
+  /* text-shadow: 2px 2px #fff; */
   font-family: "Pacifico", cursive;
 }
 
