@@ -13,6 +13,7 @@ $$$$$$$$ Navbar area style start
 }
 
 /* ******************** */
+
 .navbar {
   height: auto !important;
   box-shadow: 0 3px 2px -2px rgb(88, 87, 87);
@@ -52,7 +53,13 @@ $$$$$$$$ Navbar area style start
     border: 1px solid #fff;
   }
 }
-
+/* 
+shaker bhai code */
+@media only screen and (max-width: 62em) {
+  .navbar-bg {
+    padding: 20px 0px;
+  }
+}
 /***************************************************$$
 $$$ Navbar ended $$$ header-area style start
 ****************************************************$$*/

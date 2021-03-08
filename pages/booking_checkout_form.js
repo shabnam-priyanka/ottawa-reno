@@ -11,7 +11,7 @@ const booking_checkout_form = () => {
 
 
     const sendEmail = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
 
         // console.log(e.target)
         emailjs.sendForm('service_sec3z77', 'template_mluyb9a', e.target, 'user_0yuaPtVVcqCviBr9iMWOc')
