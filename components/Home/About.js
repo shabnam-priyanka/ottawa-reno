@@ -1,7 +1,7 @@
 import React from 'react';
 
 const About = () => {
-    const hello = 44;
+    // const hello = 44;
     return (
         <div className="about-area d-flex align-items-center">
             <section className="container-xl">
