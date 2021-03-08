@@ -83,7 +83,7 @@ $$$ Navbar ended $$$ header-area style start
 
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 .header-main-content {
-  color: rgb(241, 141, 141);
+  color: rgb(246, 117, 117);
   /* color: rgb(248, 242, 242); */
   font-size: 80px;
   text-shadow: 2px 2px #fff;
@@ -92,7 +92,7 @@ $$$ Navbar ended $$$ header-area style start
   margin-top: 8vh;
 }
 .header-main-title {
-  color: rgb(18, 20, 18);
+  color: rgb(251, 7, 157);
   font-size: 30px;
   text-shadow: 2px 2px #fff;
   font-family: "Pacifico", cursive;
