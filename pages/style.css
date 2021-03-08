@@ -55,11 +55,11 @@ $$$$$$$$ Navbar area style start
 }
 /* 
 shaker bhai code */
-@media only screen and (max-width: 62em) {
+/* @media only screen and (max-width: 62em) {
   .navbar-bg {
     padding: 20px 0px;
   }
-}
+} */
 /***************************************************$$
 $$$ Navbar ended $$$ header-area style start
 ****************************************************$$*/
@@ -109,7 +109,7 @@ $$$ Navbar ended $$$ header-area style start
     height: auto;
   }
   .header-main-content {
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
   }
   .header-main-title {
@@ -122,18 +122,18 @@ $$$ Navbar ended $$$ header-area style start
     height: 350px;
   } */
   .header-main-content {
-    font-size: 45px;
+    font-size: 35px;
     text-align: center;
   }
   .header-main-title {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
   }
 }
 
 @media (max-width: 336px) {
   .header-main-content {
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
   }
 }
