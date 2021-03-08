@@ -112,12 +112,12 @@ $$$ Navbar ended $$$ header-area style start
   .header-main-content {
     font-size: 50px;
     text-align: center;
-    /* color: rgb(86, 66, 216);
-    font-weight: bold; */
   }
   .header-main-title {
     font-size: 30px;
     text-align: center;
+    color: rgb(236, 127, 93);
+    font-weight: bold;
   }
 }
 @media (max-width: 380px) {
