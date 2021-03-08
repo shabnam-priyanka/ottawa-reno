@@ -200,10 +200,11 @@ $$$ about-area ended $$$ renovations-area style start
   border-radius: 20px;
   margin-top: 20px;
   font-weight: bold;
+  background-color: #fff;
 }
 
 .renovations-content-div button:hover {
-  background-color: #efba8e;
+  background-color: #efba8e !important;
 }
 
 @media (max-width: 900px) {

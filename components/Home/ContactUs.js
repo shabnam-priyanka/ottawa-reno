@@ -2,25 +2,27 @@ import emailjs from 'emailjs-com';
 import React from 'react';
 // used materialize form not sure how to fix it
 const ContactUs = () => {
-
     const sendEmail = (e) => {
         e.preventDefault();
 
         // console.log(e.target)
-        emailjs.sendForm('service_sec3z77', 'template_mluyb9a', e.target, 'user_0yuaPtVVcqCviBr9iMWOc')
-            .then((result) => {
-                if (result) {
-                    alert("✅Your message has been sent successfully✅")
+        emailjs
+            .sendForm('service_sec3z77', 'template_mluyb9a', e.target, 'user_0yuaPtVVcqCviBr9iMWOc')
+            .then(
+                (result) => {
+                    if (result) {
+                        alert('✅Your message has been sent successfully✅');
+                    }
+                    console.log(result.text);
+                },
+                (error) => {
+                    if (error) {
+                        alert('⚠Sorry, your message could not be sent. Please try again🔄');
+                    }
+                    console.log(error.text);
                 }
-                console.log(result.text);
-            }, (error) => {
-                if (error) {
-                    alert("⚠Sorry, your message could not be sent. Please try again🔄")
-                }
-                console.log(error.text);
-            });
-    }
-
+            );
+    };
 
     return (
         <div className="contact-area d-flex align-items-center">
@@ -37,35 +39,71 @@ const ContactUs = () => {
                             <form onSubmit={sendEmail} className="col s12">
                                 <div className="row mb-0">
                                     <div className="input-field col s6">
-                                        <input name="firstName" required id="first_name" type="text" className="validate" />
+                                        <input
+                                            name="firstName"
+                                            required
+                                            id="first_name"
+                                            type="text"
+                                            className="validate"
+                                        />
                                         <label htmlFor="first_name">First Name</label>
                                     </div>
                                     <div className="input-field col s6">
-                                        <input name="lastName" required id="last_name" type="text" className="validate" />
+                                        <input
+                                            name="lastName"
+                                            required
+                                            id="last_name"
+                                            type="text"
+                                            className="validate"
+                                        />
                                         <label htmlFor="last_name">Last Name</label>
                                     </div>
                                 </div>
                                 <div className="row mb-0">
                                     <div className="input-field col s6">
-                                        <input name="phone" required id="phone" type="text" className="validate" />
+                                        <input
+                                            name="phone"
+                                            required
+                                            id="phone"
+                                            type="text"
+                                            className="validate"
+                                        />
                                         <label htmlFor="phone">phone</label>
                                     </div>
                                     <div className="input-field col s6">
-                                        <input name="address" required id="Address" type="text" className="validate" />
+                                        <input
+                                            name="address"
+                                            required
+                                            id="Address"
+                                            type="text"
+                                            className="validate"
+                                        />
                                         <label htmlFor="Address">Address</label>
                                     </div>
                                 </div>
 
                                 <div className="row mb-0">
                                     <div className="input-field col s12">
-                                        <input name="subject" required id="subject" type="text" className="validate" />
+                                        <input
+                                            name="subject"
+                                            required
+                                            id="subject"
+                                            type="text"
+                                            className="validate"
+                                        />
                                         <label htmlFor="subject">Subject</label>
                                     </div>
                                 </div>
 
                                 <div className="row mb-0">
                                     <div className="input-field col s12">
-                                        <input name="email" required id="email" type="email" className="validate" />
+                                        <input
+                                            name="email"
+                                            required
+                                            id="email"
+                                            type="email"
+                                            className="validate"
+                                        />
                                         <label htmlFor="email">email</label>
                                     </div>
                                 </div>
