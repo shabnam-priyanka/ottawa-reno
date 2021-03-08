@@ -74,7 +74,7 @@ const booking_checkout_form = () => {
                                     </div>
                                     <div className="form-group col-md-6">
                                         <input
-                                            type="number"
+                                            type="text"
                                             className="form-control"
                                             id="inputPhoneNumber"
                                             placeholder="Phone Number *"

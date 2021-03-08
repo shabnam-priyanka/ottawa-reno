@@ -65,7 +65,7 @@ const ContactUs = () => {
                                             name="phone"
                                             required
                                             id="phone"
-                                            type="number"
+                                            type="text"
                                             className="validate"
                                         />
                                         <label htmlFor="phone">phone</label>
