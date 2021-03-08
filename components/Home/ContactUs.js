@@ -3,7 +3,7 @@ import React from 'react';
 // used materialize form not sure how to fix it
 const ContactUs = () => {
     const sendEmail = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
 
         // console.log(e.target)
         emailjs
