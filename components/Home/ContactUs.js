@@ -1,4 +1,4 @@
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 import React from 'react';
 // used materialize form not sure how to fix it
 const ContactUs = () => {
@@ -6,22 +6,22 @@ const ContactUs = () => {
         // e.preventDefault();
 
         // console.log(e.target)
-        emailjs
-            .sendForm('service_sec3z77', 'template_mluyb9a', e.target, 'user_0yuaPtVVcqCviBr9iMWOc')
-            .then(
-                (result) => {
-                    if (result) {
-                        alert('✅Your message has been sent successfully✅');
-                    }
-                    console.log(result.text);
-                },
-                (error) => {
-                    if (error) {
-                        alert('⚠Sorry, your message could not be sent. Please try again🔄');
-                    }
-                    console.log(error.text);
-                }
-            );
+        // emailjs
+        //     .sendForm('service_sec3z77', 'template_mluyb9a', e.target, 'user_0yuaPtVVcqCviBr9iMWOc')
+        //     .then(
+        //         (result) => {
+        //             if (result) {
+        //                 alert('✅Your message has been sent successfully✅');
+        //             }
+        //             console.log(result.text);
+        //         },
+        //         (error) => {
+        //             if (error) {
+        //                 alert('⚠Sorry, your message could not be sent. Please try again🔄');
+        //             }
+        //             console.log(error.text);
+        //         }
+        //     );
     };
 
     return (
