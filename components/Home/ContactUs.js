@@ -11,7 +11,9 @@ const ContactUs = () => {
             .then(
                 (result) => {
                     if (result) {
-                        alert('✅Your message has been sent successfully✅');
+                        alert('✅Your message has been sent successfully✅')
+                        document.getElementById("form").reset();
+
                     }
                     console.log(result.text);
                 },
@@ -36,7 +38,7 @@ const ContactUs = () => {
                     </div>
                     <div className="col-md">
                         <div className="row">
-                            <form onSubmit={sendEmail} className="col s12">
+                            <form onSubmit={sendEmail} id="form" className="col s12">
                                 <div className="row mb-0">
                                     <div className="input-field col s6">
                                         <input

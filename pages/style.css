@@ -92,10 +92,12 @@ $$$ Navbar ended $$$ header-area style start
   margin-top: 8vh;
 }
 .header-main-title {
-  color: rgb(23, 7, 251);
+  color: rgb(12, 10, 26);
   font-size: 30px;
-  text-shadow: 2px 2px #fff;
+  /* text-shadow: 2px 2px #fff; */
   font-family: "Pacifico", cursive;
+  font-weight: bold;
+  line-height: 0;
 }
 
 @media (max-width: 1048px) {
@@ -115,6 +117,9 @@ $$$ Navbar ended $$$ header-area style start
   .header-main-title {
     font-size: 30px;
     text-align: center;
+    color: rgb(12, 157, 201);
+    font-weight: bold;
+    text-shadow: 2px 2px #fff;
   }
 }
 @media (max-width: 380px) {
