@@ -23,7 +23,7 @@ const Footer = () => {
                     <h5>Phone : 613-861-1566 </h5>
                     <h5>Email : helpmeottawareno@gmail.com</h5>
                 </div>
-                <p className="text-center p-3 mt-0 mb-0 text-white">
+                <p className="text-center p-3 mt-0 mb-0">
                     Copyright Ottawa-Reno {new Date().getFullYear()}{' '}
                 </p>
             </div>
